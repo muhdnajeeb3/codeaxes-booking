@@ -1,6 +1,8 @@
 .FirstSection{
-    background-color: rgb(69, 69, 143);
-    height: 40rem;
+    /* background-color: rgb(69, 69, 143); */
+    height: auto;
+    background-color: rgb(32, 5, 73);
+    position: relative;
     
 }
 .logo{
@@ -11,19 +13,14 @@
 
 .roww{
 background-color: #fff;
-/* margin-top:2rem !important; */
-height: 350px;
-padding-top: 1rem;
-padding-left: 2rem;
-margin: 2rem ;
-margin-top: rem !important;
-bottom: 2rem !important;
+margin-bottom: 1rem !important;
 border-radius: 20px !important;
 }
 .container{
 /* margin-top:2rem !important; */
 background:white;
 border-radius: 20px ;
+margin-bottom: 1rem !important;
 
 
 }
@@ -31,7 +28,7 @@ border-radius: 20px ;
 .hover-underline-animation:after{
     content: '';
   position: absolute;
-  width: 100%;
+  width: 70%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
@@ -45,19 +42,21 @@ border-radius: 20px ;
     position: relative;
     /* color: #0087ca; */
     cursor: pointer;
+    /* margin: 1rem; */
+    padding: 1rem;
 }
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
     /* width: 20px; */
-    margin-left: 12px !important;
+    margin-left: 15px !important;
   }
 
 
 .roww1{
     background-color: #fff;
     position: relative;
-    height: 90px;
+    /* height: 80px; */
     border-radius: 20px;
     width: 90%;
     margin-left: auto !important;
@@ -69,6 +68,110 @@ border-radius: 20px ;
     box-shadow: 1px 1px #888888;
 
 }
-.con{
-    /* margin-top: 2rem; */
+.bidf{
+    /* margin-left: auto !important; */
+    left: auto !important;
+    padding-left: auto !important;
+    position: relative;
+    
+    /* bottom: 3rem; */
+    /* margin-top: 2rem !important; */
+}
+/* radiobutton */
+.radiobutton,.radiobutton1,.radiobutton2{
+    width: 15% !important;
+    min-width: 20% !important;
+    margin-left: 1rem;
+    background-color: rgb(225, 225, 225) !important;
+    margin-bottom: 1rem;
+    color: black !important;
+}
+/* oneway */
+.oneway{
+    /* margin: 1rem !; */
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: rgb(235, 246, 249);
+    border-radius: 20px;
+    /* height: 300px; */
+    justify-content: space-evenly !important;
+    margin-bottom: 1rem;
+    box-shadow: 1px 2px #888888;
+    border: black !important;
+    border-color: black !important;
+    cursor: pointer;
+   
+    
+}
+.onewaybutton{
+    /* width: 100%; */
+    /* width: 400px; */
+}
+.anothercity{
+    background-color: #fff !important;
+    color: black !important;
+    
+    margin-top: 2rem !important;
+}
+/* select fare types */
+.row3{
+    margin-top: 1rem !important;
+    margin-left: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+.faretypes{
+    color: #888888;
+}
+.faretypesbutton{
+    background-color: rgb(237, 235, 235) !important;
+    width: 10% !important;
+    position: relative;
+    bottom: 2.5rem;
+    margin-left: 6rem;
+    /* margin-left: auto; */
+}
+.faretypesbutton1{
+    width: 10% !important;
+    background-color: rgb(237, 235, 235) !important;
+    position: relative;
+    bottom: 2.5rem;
+    margin-left: 5px;
+}
+.faretypesbutton2{
+    width: 10% !important;
+    background-color: rgb(237, 235, 235) !important;
+    position: relative;
+    bottom: 2.5rem;
+    margin-left: 5px;
+
+}
+.faretypesbutton3{
+    width: 10% !important;
+    position: relative;
+    background-color: rgb(237, 235, 235) !important;
+    bottom: 2.5rem;
+    margin-left: 5px;
+
+}
+.faretypesbutton4{
+    width: 10% !important;
+    position: relative;
+    background-color: rgb(237, 235, 235) !important;
+    bottom: 2.5rem;
+    margin-left: 5px;
+
+}
+.faretypesbutton5{
+    width: 10% !important;
+    background-color: rgb(237, 235, 235) !important;
+    position: relative;
+    bottom: 2.5rem;
+    margin-right: auto !important;
+    justify-content: space-between;
+}
+.farespan{
+    justify-content: space-between !important;
+    /* margin-left: 0.5rem; */
+    margin-left: auto;
 }
