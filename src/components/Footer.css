@@ -1,0 +1,36 @@
+.footer{
+    background: #e7e7e7;
+}
+.footer1{
+    background: black;
+    height: 10rem;
+}
+.footertext{
+    color: white;
+
+}
+.country{
+    color: white;
+}
+.indiausauae{
+    color: white;
+}
+.footertext,.country,.indiausauae{
+    margin-left: 5rem !important;
+    margin-top: 1rem !important;
+}
+.desctitle{
+    /* margin: 0rem 1rem 0px 2rem; */
+    /* padding: 2rem; */
+    margin-top: 2rem !important;
+    /* margin-left: 2rem !important; */
+    padding-left: 3rem !important;
+    /* margin: rem; */
+    /* padding: 1rem 1rem 1rem 1rem; */
+}
+.descpar{
+    /* margin-left: 1rem; */
+    /* margin: 1rem !important; */
+    padding: 3rem !important;
+}
+
