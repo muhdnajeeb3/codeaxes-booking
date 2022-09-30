@@ -162,82 +162,55 @@ function FirstSection() {
             />
             <span className="onewaytitle">MULTI CITY</span>
           </Button>
-          <span className="bidf">Book International and Domestic Flights</span>
+          <Row className="bidf"> 
+          <h5 className="bidf">Book International and Domestic Flights</h5>
+          </Row>
+          
           <Row>
             {/* oneway */}
             {oneWay && (
               <>
                 <Row className="oneway">
-                  <Col className="coloneway">
-                    <Button
-                      variant=""
-                      className="onewaybutton"
-                      onClick={() => setFrom(!from)}
-                    >
-                      {from && (
-                        <>
-                          <input
-                            type="search"
-                            placeholder="Search employe..."
-                            // className="input"
-                            onChange={(e) => {
-                              setSearchTerm(e.target.value);
-                            }}
-                          />
-                          <>
-            {from && 
-            
-              Records.filter((record) => {
-                if (searchTerm === "") {
-                  return record;
-                } else if (
-                  record.name.toLowerCase().includes(searchTerm.toLowerCase())
-                ) {
-                  return record;
-                }
-              }).map((record) => {
-                return (
-
-                  <div className="card1" key={record.id}>
-                    {/* <input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" class="react-autosuggest__input react-autosuggest__input--open" placeholder="From" value></input> */}
-                    {/* <h4 className='name'>{record.name}</h4> */}
-
-
-                    <lablel>
-                      <span className="name">{record.name}</span>
-                    </lablel>
-                  </div>
-                );
-              })}
-          </>
-                        </>
-                      )}
+                  <Col className="coloneway1"
+                      onClick={() => alert("hey")} >
+                    
+                      
                       <h6>FROM</h6>
-                      <br />
-                      <h2>{from}</h2>
-                    </Button>
+                      <h2>Kolkata</h2>
+                      <p>hhh</p>
                   </Col>
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
+                  <div className="row vertical-line"></div>
+
+                  <Col className="coloneway1"
+                      onClick={() => alert("hey")} >
+                    
+                      
                       <h6>TO</h6>
-                      <br />
-                      <h2>Dubai</h2>
-                    </Button>
+                      <h2>DUBAI</h2>
                   </Col>
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
+                  <div className="row vertical-line"></div>
+
+                  <Col className="coloneway1"
+                      onClick={() => alert("hey")} >
+                    
+                      
                       <h6>DEPARTURE</h6>
-                    </Button>
                   </Col>
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
+                  <div className="row vertical-line"></div>
+
+                  <Col className="coloneway1"
+                      onClick={() => alert("hey")} >
+                    
+                      
                       <h6>RETURN</h6>
-                    </Button>
                   </Col>
-                  <Col>
-                    <Button variant="" className="onewaybutton">
-                      <h6>TRAVELLERS AND CLASS</h6>
-                    </Button>
+                  <div className="row vertical-line"></div>
+
+                  <Col className="coloneway1"
+                      onClick={() => alert("hey")} >
+                    
+                      
+                      <p>TRAVELLERS AND CLASS</p>
                   </Col>
                 </Row>
               </>
@@ -246,35 +219,47 @@ function FirstSection() {
             {roundTrip && (
               <>
                 <Row className="oneway">
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
-                      <h4>FROM</h4>
-                      <br />
-                      <h2>Calicut</h2>
-                    </Button>
+                  <Col className="coloneway1"
+                      onClick={() => alert("hey")} >
+                    
+                      
+                      <h6>FROM</h6>
+                      <h2>Kolkata</h2>
+                      <p>hhh</p>
                   </Col>
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
-                      <h4>TO</h4>
-                      <br />
-                      <h2>Dubai</h2>
-                    </Button>
+                  <div className="row vertical-line"></div>
+
+                  <Col className="coloneway1"
+                      onClick={() => alert("hey")} >
+                    
+                      
+                      <h6>TO</h6>
+                      <h2>DUBAI</h2>
                   </Col>
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
-                      <h4>DEPARTURE</h4>
-                    </Button>
+                  <div className="row vertical-line"></div>
+
+                  <Col className="coloneway1"
+                      onClick={() => alert("hey")} >
+                    
+                      
+                      <h6>DEPARTURE</h6>
                   </Col>
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
-                      <h4>RETURN</h4>
-                    </Button>
+                  <div className="row vertical-line"></div>
+
+                  <Col className="coloneway1"
+                      onClick={() => alert("hey")} >
+                    
+                      
+                      <h6>RETURN</h6>
                   </Col>
-                  {/* <Col>
-                    <Button variant="" className="onewaybutton">
-                      <h1>TRAVELLERS AND CLASS</h1>
-                    </Button>
-                  </Col> */}
+                  <div className="row vertical-line"></div>
+
+                  <Col className="coloneway1"
+                      onClick={() => alert("hey")} >
+                    
+                      
+                      <p>TRAVELLERS AND CLASS</p>
+                  </Col>
                 </Row>
               </>
             )}
@@ -282,29 +267,32 @@ function FirstSection() {
             {multiCity && (
               <>
                 <Row className="oneway">
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
+                  <Col className="coloneway1">
+                    
                       <h4>FROM</h4>
-                      <br />
                       <h2>Calicut</h2>
-                    </Button>
+                    
                   </Col>
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
+                  <div className="row vertical-line"></div>
+
+                  <Col className="coloneway1">
+                    
                       <h4>TO</h4>
-                      <br />
-                      <h2>Dubai</h2>
-                    </Button>
+                      <h2>DUBAI</h2>
+                    
                   </Col>
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
+                  <div className="row vertical-line"></div>
+
+                  <Col className="coloneway1">
+                    
                       <h4>DEPARTURE</h4>
-                    </Button>
+                      
+                    
                   </Col>
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
+                  <div className="row vertical-line"></div>
+
+                  <Col className="coloneway1">
                       <h4>RETURN</h4>
-                    </Button>
                   </Col>
                   {/* <Col>
                     <Button variant="" className="onewaybutton">
@@ -313,27 +301,32 @@ function FirstSection() {
                   </Col> */}
                 </Row>
                 <Row className="oneway">
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
-                      <h4>FROM</h4>
-                      <br />
-                      <h2>Calicut</h2>
-                    </Button>
-                  </Col>
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
-                      <h4>TO</h4>
-                      <br />
-                      <h2>Dubai</h2>
-                    </Button>
-                  </Col>
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
-                      <h4>DEPARTURE</h4>
-                    </Button>
-                  </Col>
-                  <Col className="coloneway">
-                    <Button variant="" className="onewaybutton">
+                <Col className="coloneway1">
+                    
+                    <h4>FROM</h4>
+                    <h2>Calicut</h2>
+                  
+                </Col>
+                <div className="row vertical-line"></div>
+
+                <Col className="coloneway1">
+                  
+                    <h4>TO</h4>
+                    <h2>DUBAI</h2>
+                  
+                </Col>
+                <div className="row vertical-line"></div>
+
+                <Col className="coloneway1">
+                  
+                    <h4>DEPARTURE</h4>
+                    
+                  
+                </Col>
+                  <div className="row vertical-line"></div>
+
+                  <Col className="coloneway1">
+                    
                       <Button
                         className="anothercity"
                         // onClick={() => setNewCity(!newCity)}
@@ -342,7 +335,6 @@ function FirstSection() {
                         {" "}
                         +Add ANOTHER CITY
                       </Button>
-                    </Button>
                   </Col>
 
                   {/* <Col>
@@ -355,27 +347,31 @@ function FirstSection() {
                   return (
                     <>
                       <Row className="oneway">
+                      <Col className="coloneway1">
+                    
+                    <h4>FROM</h4>
+                    <h2>Calicut</h2>
+                  
+                </Col>
+                <div className="row vertical-line"></div>
+
+                <Col className="coloneway1">
+                  
+                    <h4>TO</h4>
+                    <h2>DUBAI</h2>
+                  
+                </Col>
+                <div className="row vertical-line"></div>
+
+                <Col className="coloneway1">
+                  
+                    <h4>DEPARTURE</h4>
+                    
+                  
+                </Col>
+                  <div className="row vertical-line"></div>
+
                         <Col className="coloneway">
-                          <Button variant="" className="onewaybutton">
-                            <h4>FROM</h4>
-                            <br />
-                            <h2>Calicut</h2>
-                          </Button>
-                        </Col>
-                        <Col className="coloneway">
-                          <Button variant="" className="onewaybutton">
-                            <h4>TO</h4>
-                            <br />
-                            <h2>Dubai</h2>
-                          </Button>
-                        </Col>
-                        <Col className="coloneway">
-                          <Button variant="" className="onewaybutton">
-                            <h4>DEPARTURE </h4>
-                          </Button>
-                        </Col>
-                        <Col className="coloneway">
-                          <Button variant="" className="onewaybutton">
                             <Button variant="" className="deletebutton">
                               <Button
                                 variant="dark"
@@ -384,7 +380,6 @@ function FirstSection() {
                                 x
                               </Button>
                             </Button>
-                          </Button>
                         </Col>
                       </Row>
                     </>

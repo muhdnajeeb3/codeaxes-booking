@@ -5,6 +5,10 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import 'react-bootstrap-typeahead/css/Typeahead.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "slick-carousel/slick/slick.css";
+
+import "slick-carousel/slick/slick-theme.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

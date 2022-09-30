@@ -1,0 +1,106 @@
+.OfferSection{
+background-color:  rgb(249, 248, 247);
+padding: 2rem;
+bottom: 4rem!important;
+position: relative;
+/* margin-bottom:   2rem !important; */
+
+}
+.carosel1{
+    margin-top: 1rem !important;
+    /* margin-bottom: 1rem; */
+
+    
+    
+}
+.carosel{
+    -moz-box-shadow: 0 0 3px #ccc !important;
+    -webkit-box-shadow: 0 0 5px #ccc !important;
+    box-shadow: 0 0 10px rgb(158, 156, 156) !important;
+    /* margin-top:   2rem !important; */
+    
+    
+}
+.cards{
+    display: flex;
+    position: relative !important;
+    flex-direction: row !important;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 4px #ccc;
+    box-shadow: 0 0 5px rgb(158, 156, 156);
+    border-radius: 10px;
+
+    /* margin-top: 1rem; */
+}
+.carosel{
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px rgb(158, 156, 156);
+    border-radius: 10px;
+    margin-top: 2rem !important;
+}
+.carosel1{
+    margin-bottom: 0rem !important;
+}
+.center{
+    margin-left: 2rem !important;
+    /* padding: rem; */
+    justify-content: space-between !important;
+    gap: 20px !important;
+}
+.slick-slide {
+    margin: 0 5.5rem;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 -27px;
+}
+.img{
+    object-fit: cover !important;
+    background-size: cover !important;
+    /* height:100; */
+    width: 80% !important;
+    margin:1.5rem ;
+}
+.btnofferflight{
+    position: relative;
+    bottom: 3rem;
+    text-align: start !important;
+    margin-left: 9rem !important;
+    width: 5% !important;
+}
+.btnofferflight:hover{
+    color: blue !important;
+    
+}
+.sliderrow{
+    bottom: 3.5rem !important;
+    margin: 0 !important;
+}
+.btnofferflighttext{
+    /* font-size: 1rem; */
+    font-weight: 500;
+}
+.slick-next,.slick-prev{
+    top: 45%;
+    background-color: rgb(70, 122, 118) !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    position: relative;
+    margin-right: 2rem !important;
+    right: 6rem;
+  }
+  .aboutheading{
+    margin-left: 2rem !important;
+    margin-top: 1rem !important;
+
+  }
+  .abouttext{
+    margin-left: 2rem !important;
+    margin-top: 1rem !important;
+    /* font-weight: 600 !important; */
+    font-size: x-large;
+    line-height: 4rem!important;
+
+  }

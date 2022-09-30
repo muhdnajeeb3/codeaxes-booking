@@ -1,6 +1,8 @@
 .SecondSection{
     background: #f2f2f2;
     background-color: #f2f2f2;
+    position: absolute;
+    margin-top: 2rem;
 
 }
 .secondrow{
@@ -28,3 +30,22 @@ position: relative;
 .productparag1{
     /* margin-left: 1rem; */
 }
+.carosel{
+    /* display: flex !important;
+
+    flex-direction: column !important; */
+    margin-top: 2rem !important;
+}
+.carosel1{
+    margin-top: 1rem !important;
+    margin-bottom: 1rem;
+}
+.cards{
+    margin-left: 9rem !important;
+    margin-bottom: 2rem;
+    justify-content: space-between !important;
+    margin: 2rem !important;
+
+    /* margin-top: 1rem; */
+}
+

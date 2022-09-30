@@ -1,8 +1,10 @@
 .FirstSection{
     /* background-color: rgb(69, 69, 143); */
-    height: auto;
+    height: 100% !important;
+    padding: 3rem;
     background-color: rgb(32, 5, 73);
-    position: relative;
+    position: relative !important;
+    margin-bottom: 4rem !important;
     
 }
 .logo{
@@ -15,6 +17,8 @@
 background-color: #fff;
 margin-bottom: 1rem !important;
 border-radius: 20px !important;
+
+
 }
 .container{
 /* margin-top:2rem !important; */
@@ -72,22 +76,35 @@ margin-bottom: 1rem !important;
     /* margin-left: auto !important; */
     left: auto !important;
     padding-left: auto !important;
-    position: relative;
+    position: relative !important;
+    text-align: end;
+    font-weight: 500;
     
     /* bottom: 3rem; */
     /* margin-top: 2rem !important; */
 }
 /* radiobutton */
 .radiobutton,.radiobutton1,.radiobutton2{
-    width: 15% !important;
-    min-width: 20% !important;
-    margin-left: 1rem;
+    width: 10% !important;
+    padding: 0;
+    min-width: 12% !important;
+    margin-left: 10px;
     background-color: rgb(225, 225, 225) !important;
     margin-bottom: 1rem;
     color: black !important;
     border-radius: 2rem !important;
     
 }
+div.vertical-line{
+    width: 1px; /* Line width */
+    border-right: 1px solid lightgray !important;
+    height: 100%;
+    /* position: absolute !important; */
+    position: relative;
+    padding-left: 10px;
+    margin-right: 2rem;
+    
+  }
 
 /* oneway */
 .onewaytitle{
@@ -114,10 +131,14 @@ box-shadow: 0 0 3px rgb(158, 156, 156);
    
     
 }
-.coloneway:hover{
+.coloneway1:hover{
     background-color: rgb(227, 242, 247);
     transition-duration: 0.5s;
+    width: 10px !important;
 
+}
+.coloneway1{
+    min-width: 10px !important;
 }
 .anothercity{
     background-color: #fff !important;
@@ -127,9 +148,7 @@ box-shadow: 0 0 3px rgb(158, 156, 156);
 }
 /* select fare types */
 .row3{
-    margin-top: 1rem !important;
-    /* margin-left: 1rem !important; */
-    /* margin-bottom: 1rem !important; */
+    margin-top: 0rem;
 }
 .faretypes{
     color: #888888;
