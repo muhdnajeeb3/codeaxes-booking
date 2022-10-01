@@ -30,21 +30,21 @@ function OfferSection() {
             <Slider {...settings} className="sliderrow">
               <div>
                 <Card style={{ width: "35rem",height:"16rem",marginLeft:"2rem" }} className="cards">
-                  <Card.Img variant="top" src="https://i.natgeofe.com/n/f3d0b742-5bef-4665-87e8-61ef82a0101c/dubai-travel_square.jpg" className="img"/>
+                  <Card.Img variant="top" src="https://promos.makemytrip.com/notification/xhdpi//indigo-116x116-08072022.jpg" className="img"/>
                   <Card.Body>
-                    <h6>DOM FLIGHTS</h6>
+                    {/* <h6>DOM FLIGHTS</h6> */}
                     {/* <Card.Title>DOM FLIGHTS</Card.Title> */}
-                    <h5>FOR YOU: Up to 35% OFF* on Domestic Flights</h5>
+                    <h5>FASTEN YOUR SEAT BELTS: New Flights by Indigo</h5>
                     <Card.Text>
-                      with Our Flight Sale Live till December.
+                      NOW flying between Dhaka & Bengaluru!.
                     </Card.Text>
-                    <Button variant="info">Book Now</Button>
+                    <Button variant="info" >Book Now</Button>
                   </Card.Body>
                 </Card>
               </div>
               <div>
               <Card style={{ width: "35rem",height:"16rem",marginLeft:"2rem" }} className="cards">
-                  <Card.Img variant="top" src="https://i.natgeofe.com/n/f3d0b742-5bef-4665-87e8-61ef82a0101c/dubai-travel_square.jpg" className="img"/>
+                  <Card.Img variant="top" src="https://promos.makemytrip.com/notification/xhdpi//116x116-AirArabia-19092022.jpg" className="img"/>
                   <Card.Body>
                     <h6>DOM FLIGHTS</h6>
                     {/* <Card.Title>DOM FLIGHTS</Card.Title> */}
@@ -236,37 +236,37 @@ function OfferSection() {
             <h2 className="aboutheading">PRODUCT OFFERING</h2>
         </Row>
         <Row>
-            <h6 className="abouttext">Flights,International Flights,Charter Flights</h6>
+            <p className="abouttext">Flights,International Flights,Charter Flights</p>
         </Row>
         <Row>
             <h2 className="aboutheading">MY TRIP</h2>
         </Row>
         <Row>
-            <h6 className="abouttext">Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h6>
+            <p className="abouttext">Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </Row>
         <Row>
             <h2 className="aboutheading">ABOUT THE SITE</h2>
         </Row>
         <Row>
-            <h6 className="abouttext">Customer Support,Payment Security,Privary Policy,User Agreement,Terms of Service,More Offices,Make A Payment,Work From Home</h6>
+            <p className="abouttext">Customer Support,Payment Security,Privary Policy,User Agreement,Terms of Service,More Offices,Make A Payment,Work From Home</p>
         </Row>
         <Row>
             <h2 className="aboutheading">QUICK LINKS</h2>
         </Row>
         <Row>
-            <h6 className="abouttext">Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h6>
+            <p className="abouttext">Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </Row>
         <Row>
             <h2 className="aboutheading">IMPORTANT LINKS</h2>
         </Row>
         <Row>
-            <h6 className="abouttext">Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h6>
+            <p className="abouttext">Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </Row>
         <Row>
             <h2 className="aboutheading">CORPORATE TRAVEL</h2>
         </Row>
         <Row>
-            <h6 className="abouttext">Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h6>
+            <p className="abouttext">Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </Row> 
         
 
