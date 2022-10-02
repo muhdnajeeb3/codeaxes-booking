@@ -79,9 +79,10 @@ function FirstSection() {
           <Col className="hover-underline-animation">
             {" "}
             <Button variant="" type="submit" onClick={FLIGHTHANDLER}>
-              <FontAwesomeIcon icon={faPlaneDeparture} size="2x" />
+              <FontAwesomeIcon icon={faPlaneDeparture} size="xl" />
               <br />
-              Flights
+              <span style={{ fontSize:"14px",lineHeight:"12px" }}>Flights</span>
+              
             </Button>
           </Col>
           <Col className="hover-underline-animation">
@@ -90,9 +91,11 @@ function FirstSection() {
               <FontAwesomeIcon
                 icon={faHotel}
                 onClick={HOTELHANDLER}
-                size="2x"
+                size="xl"
               />{" "}
-              <br /> Hotels
+              <br /> 
+              <span style={{ fontSize:"14px",lineHeight:"12px" }}>Hotels</span>
+              
             </Button>
           </Col>
           <Col className="hover-underline-animation">
@@ -101,32 +104,37 @@ function FirstSection() {
               <FontAwesomeIcon
                 icon={faTrain}
                 onClick={TRAINHANDLER}
-                size="2x"
+                size="xl"
               />
-              <br /> Trains
+              <br /> 
+              <span style={{ fontSize:"14px",lineHeight:"12px" }}>Trains</span>
+
             </Button>
           </Col>
           <Col className="hover-underline-animation">
             {" "}
             <Button variant="" type="submit" onClick={BUSESHANDLER}>
-              <FontAwesomeIcon icon={faBus} size="2x" />
+              <FontAwesomeIcon icon={faBus} size="xl" />
               <br />
-              Buses
+              <span style={{ fontSize:"14px",lineHeight:"12px" }}>Buses</span>
+              
             </Button>
           </Col>
           <Col className="hover-underline-animation">
             {" "}
             <Button variant="" type="submit" onClick={VISASHANDLER}>
-              <FontAwesomeIcon icon={faAddressCard} size="2x" /> <br />
-              Visa
+              <FontAwesomeIcon icon={faAddressCard} size="xl" /> <br />
+              <span style={{ fontSize:"14px",lineHeight:"12px" }}>Visas</span>
+              
             </Button>
           </Col>
           <Col className="hover-underline-animation">
             {" "}
             <Button variant="" type="submit" onClick={HOLIDAYPACKAGES}>
-              <FontAwesomeIcon icon={faParachuteBox} size="2x" />
+              <FontAwesomeIcon icon={faParachuteBox} size="xl" />
               <br />
-              Holiday Packages
+              <span style={{ fontSize:"14px",lineHeight:"12px" }}>Holiday Packages</span>
+
             </Button>
           </Col>
         </Row>
@@ -137,32 +145,35 @@ function FirstSection() {
               type="radio"
               value="select"
               name="select"
+              className="onewaytitle"
               onChange={ONEWAY}
-              onClick={() => setOneWay(!oneWay)}
+              onClick={() => setOneWay(true)}
             />
             <span className="onewaytitle">ONE WAY</span>
           </Button>
           <Button className="radiobutton1" variant="">
             <input
               type="radio"
+              className="onewaytitle"
               value="select1"
               name="select"
               onChange={ROUNDTRIP}
-              onClick={() => setRoundTrip(!roundTrip)}
+              onClick={() => setRoundTrip(true)}
             />
             <span className="onewaytitle">ROUND TRIP</span>
           </Button>
           <Button className="radiobutton2" variant="">
             <input
               type="radio"
+              className="onewaytitle"
               value="select2"
               name="select"
-              onClick={() => setMultiCity(!multiCity)}
+              onClick={() => setMultiCity(true)}
               onChange={MULTICITYHANDLER}
             />
             <span className="onewaytitle">MULTI CITY</span>
           </Button>
-          <Row className="bidf"> 
+          <Row className="bidf1"> 
           <h5 className="bidf">Book International and Domestic Flights</h5>
           </Row>
           
@@ -171,13 +182,22 @@ function FirstSection() {
             {oneWay && (
               <>
                 <Row className="oneway">
-                  <Col className="coloneway1"
+                  <Col className="col-3"
+                      
+                      onClick={() => alert("hey")} >
+                      <span className="from">FROM</span><br />
+                      <span className="start">Delhi</span>
+                      <p className="subfrom">DEL,AIRPORT</p>
+                  </Col>
+                  <div className="row vertical-line"></div>
+
+                  <Col className="col-3"
                       onClick={() => alert("hey")} >
                     
                       
-                      <h6>FROM</h6>
-                      <h2>Kolkata</h2>
-                      <p>hhh</p>
+                    <span className="from">TO</span><br />
+                      <span className="start">DUBAI</span>
+                      <p className="subfrom">DxB,AIRPORT</p>
                   </Col>
                   <div className="row vertical-line"></div>
 
@@ -185,8 +205,8 @@ function FirstSection() {
                       onClick={() => alert("hey")} >
                     
                       
-                      <h6>TO</h6>
-                      <h2>DUBAI</h2>
+                    <span className="from">DEPARTURE</span><br />
+                      
                   </Col>
                   <div className="row vertical-line"></div>
 
@@ -194,23 +214,18 @@ function FirstSection() {
                       onClick={() => alert("hey")} >
                     
                       
-                      <h6>DEPARTURE</h6>
+                    <span className="from" style={{textAlign:"center"}}>RETURN</span><br />
+                    <p className="returnparag">Tap to add a return date for bigger</p>
+
                   </Col>
                   <div className="row vertical-line"></div>
 
-                  <Col className="coloneway1"
+                  <Col className="col-2"
                       onClick={() => alert("hey")} >
                     
                       
-                      <h6>RETURN</h6>
-                  </Col>
-                  <div className="row vertical-line"></div>
+                    <span className="from">TRAVELLERS &CLASS</span><br />
 
-                  <Col className="coloneway1"
-                      onClick={() => alert("hey")} >
-                    
-                      
-                      <p>TRAVELLERS AND CLASS</p>
                   </Col>
                 </Row>
               </>
@@ -219,7 +234,7 @@ function FirstSection() {
             {roundTrip && (
               <>
                 <Row className="oneway">
-                  <Col className="coloneway1"
+                  <Col className="col-3"
                       onClick={() => alert("hey")} >
                     
                       
@@ -229,7 +244,7 @@ function FirstSection() {
                   </Col>
                   <div className="row vertical-line"></div>
 
-                  <Col className="coloneway1"
+                  <Col className="col-3"
                       onClick={() => alert("hey")} >
                     
                       
@@ -254,7 +269,7 @@ function FirstSection() {
                   </Col>
                   <div className="row vertical-line"></div>
 
-                  <Col className="coloneway1"
+                  <Col className="col-2"
                       onClick={() => alert("hey")} >
                     
                       
@@ -267,7 +282,7 @@ function FirstSection() {
             {multiCity && (
               <>
                 <Row className="oneway">
-                  <Col className="coloneway1">
+                  <Col className="col-3">
                     
                       <h4>FROM</h4>
                       <h2>Calicut</h2>
@@ -275,7 +290,7 @@ function FirstSection() {
                   </Col>
                   <div className="row vertical-line"></div>
 
-                  <Col className="coloneway1">
+                  <Col className="col-3">
                     
                       <h4>TO</h4>
                       <h2>DUBAI</h2>
@@ -283,25 +298,21 @@ function FirstSection() {
                   </Col>
                   <div className="row vertical-line"></div>
 
-                  <Col className="coloneway1">
+                  <Col className="col-1">
                     
-                      <h4>DEPARTURE</h4>
+                      <b>DEPARTURE</b>
                       
                     
                   </Col>
                   <div className="row vertical-line"></div>
 
-                  <Col className="coloneway1">
+                  <Col className="col-3">
                       <h4>RETURN</h4>
                   </Col>
-                  {/* <Col>
-                    <Button variant="" className="onewaybutton">
-                      <h1>TRAVELLERS AND CLASS</h1>
-                    </Button>
-                  </Col> */}
+                  
                 </Row>
                 <Row className="oneway">
-                <Col className="coloneway1">
+                <Col className="col-3">
                     
                     <h4>FROM</h4>
                     <h2>Calicut</h2>
@@ -309,7 +320,7 @@ function FirstSection() {
                 </Col>
                 <div className="row vertical-line"></div>
 
-                <Col className="coloneway1">
+                <Col className="col-3">
                   
                     <h4>TO</h4>
                     <h2>DUBAI</h2>
@@ -317,15 +328,15 @@ function FirstSection() {
                 </Col>
                 <div className="row vertical-line"></div>
 
-                <Col className="coloneway1">
+                <Col className="col-1">
                   
-                    <h4>DEPARTURE</h4>
+                    <b>DEPARTURE</b>
                     
                   
                 </Col>
                   <div className="row vertical-line"></div>
 
-                  <Col className="coloneway1">
+                  <Col className="col-3">
                     
                       <Button
                         className="anothercity"
@@ -347,7 +358,7 @@ function FirstSection() {
                   return (
                     <>
                       <Row className="oneway">
-                      <Col className="coloneway1">
+                      <Col className="col-3">
                     
                     <h4>FROM</h4>
                     <h2>Calicut</h2>
@@ -355,7 +366,7 @@ function FirstSection() {
                 </Col>
                 <div className="row vertical-line"></div>
 
-                <Col className="coloneway1">
+                <Col className="col-3">
                   
                     <h4>TO</h4>
                     <h2>DUBAI</h2>
@@ -363,15 +374,15 @@ function FirstSection() {
                 </Col>
                 <div className="row vertical-line"></div>
 
-                <Col className="coloneway1">
+                <Col className="col-1">
                   
-                    <h4>DEPARTURE</h4>
+                    <b>DEPARTURE</b>
                     
                   
                 </Col>
                   <div className="row vertical-line"></div>
 
-                        <Col className="coloneway">
+                        <Col className="col-3">
                             <Button variant="" className="deletebutton">
                               <Button
                                 variant="dark"
@@ -407,7 +418,7 @@ function FirstSection() {
                 <span className="farespan">
                   Armed Forces
                   <br />
-                  Fares
+                  Fares <span className="new">NEW</span>
                 </span>{" "}
               </Button>
               <Button className="faretypesbutton2" variant="">
