@@ -30,6 +30,7 @@ position: relative;
     -webkit-box-shadow: 0 0 4px #ccc;
     box-shadow: 0 0 5px rgb(158, 156, 156);
     border-radius: 10px;
+    /* height: 12rem !important; */
 
     /* margin-top: 1rem; */
 }
@@ -51,16 +52,35 @@ position: relative;
 }
 .booknowrow{
     position: relative;
-    top: 1.5rem;
+    top: 3.5rem;
+    
+    
     
     margin-left: auto !important;
 }
 .booknowbtn{
-    color: blue !important;
-    font-weight: 500 !important;
+    /* color: blue !important; */
+    color: #008cff !important;
+    font-weight: 900 !important;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    margin-left: auto !important;
+    text-align: end !important;
+    justify-content: end !important;
+}
+.tcaplly{
+    text-align: start !important;
+    margin-right: auto !important;
+    position: relative ;
+    justify-content: start !important;
+    /* top: 1.6rem; */
+    /* margin-right: 5rem !important; */
+    right: auto !important;
 }
 .cardtext{
-    font-size: 12px !important;
+    font-size: 14px !important;
+    color: #9b9b9b;
+    line-height: 16px;
     /* padding: 0rem; */
     /* padding-bottom: 0; */
     
@@ -71,7 +91,7 @@ position: relative;
 
 /* the parent */
 .slick-list {
-    /* margin: 0 -27px !important; */
+    /* margin: 0 -2px !important; */
 }
 .img{
     object-fit: cover !important;
@@ -107,9 +127,11 @@ position: relative;
     width: 2rem !important;
     height: 2rem !important;
     position: relative;
-    margin-right: 2rem !important;
-    right: 6rem;
+    /* margin-right: 2rem !important; */
+    /* left: 3rem !important; */
   }
+  
+ 
   .aboutheading{
     margin-left: 2rem !important;
     margin-top: 1rem !important;

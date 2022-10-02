@@ -34,7 +34,7 @@ function OfferSection() {
               <h4 className="btnofferflighttext">FLIGHTS</h4>
             </Button>
           </Row>
-          <Row>
+          <Row style={{height:"30.5rem"}}>
             <div>
               <Slider {...settings} className="sliderrow">
                 <div>
@@ -52,14 +52,16 @@ function OfferSection() {
                       className="img"
                     />
                     <Card.Body>
-                      <h5>FASTEN YOUR SEAT BELTS: New Flights by Indigo</h5>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>FASTEN YOUR SEAT BELTS: New Flights by Indigo</h5>
                       <Card.Text className="cardtext">
                         NOW flying between Dhaka & Bengaluru!.
                       </Card.Text>
                       <Row
-                        style={{ width: "8rem", top: "2.7rem" }}
+                      
+                        
                         className="booknowrow"
                       >
+                        {/* <span className="tcaplly">T&C's APPly</span> */}
                         <Button
                           variant=""
                           className="booknowbtn"
@@ -88,7 +90,7 @@ function OfferSection() {
                     <Card.Body>
                       {/* <h6>DOM FLIGHTS</h6> */}
                       {/* <Card.Title>DOM FLIGHTS</Card.Title> */}
-                      <h5>Power-Packed Deals on Air Arabia's Flights!</h5>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>Power-Packed Deals on Air Arabia's Flights!</h5>
                       <Card.Text className="cardtext">
                         Now enjoy special fares on flights to select routes..
                       </Card.Text>
@@ -117,7 +119,7 @@ function OfferSection() {
                     <Card.Body>
                       {/* <h6>DOM FLIGHTS</h6> */}
                       {/* <Card.Title>DOM FLIGHTS</Card.Title> */}
-                      <h5>Carry Extra Baggage @20%* Lower Prices!</h5>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>Carry Extra Baggage @20%* Lower Prices!</h5>
                       <Card.Text className="cardtext">
                         Now purchase EXCESS BAGGAGE allowance in advance & save
                         BIG bucks on your journey.
@@ -147,7 +149,7 @@ function OfferSection() {
                     <Card.Body>
                       {/* <h6>DOM FLIGHTS</h6> */}
                       {/* <Card.Title>DOM FLIGHTS</Card.Title> */}
-                      <h5>Meals for Your Flights @ uo to 20% Lower Prices!</h5>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>Meals for Your Flights @ uo to 20% Lower Prices!</h5>
                       <Card.Text className="cardtext">
                         Now book your meal in advance & save BIG bucks on your
                         journey.
@@ -176,7 +178,7 @@ function OfferSection() {
                     />
                     <Card.Body>
                       {/* <Card.Title>DOM FLIGHTS</Card.Title> */}
-                      <h5>It's the Seoson of #DiscountDEALLights!</h5>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>It's the Seoson of #DiscountDEALLights!</h5>
                       <Card.Text className="cardtext">
                         Pay with Mobikwik & grab up to Rs. 600 OFF* on
                         Domesticflights,hotels,bus booking.
@@ -206,7 +208,7 @@ function OfferSection() {
                       className="img"
                     />
                     <Card.Body>
-                      <h5>Travel Restrictions Eased for Thailand!</h5>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>Travel Restrictions Eased for Thailand!</h5>
                       <Card.Text className="cardtext">
                         Now explore Thailand without worrying about
                         rapid-antigen test.Thailand pass or travel insurance. .
@@ -237,7 +239,7 @@ function OfferSection() {
                       className="img"
                     />
                     <Card.Body>
-                      <h5>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>
                         INTRODUCED: Special Fares for Healthcare Profession...
                       </h5>
                       <Card.Text className="cardtext">
@@ -266,7 +268,7 @@ function OfferSection() {
                       className="img"
                     />
                     <Card.Body>
-                      <h5>Jazeera Airlines Introduces New Flights</h5>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>Jazeera Airlines Introduces New Flights</h5>
                       <Card.Text className="cardtext">
                         From/to Kuwait,Thiruvananthapuram and Bengaluru!.
                       </Card.Text>
@@ -293,7 +295,7 @@ function OfferSection() {
                       className="img"
                     />
                     <Card.Body>
-                      <h5>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>
                         For You: Group Booking Benefits on Flights FLIGHTS
                       </h5>
 
@@ -323,7 +325,7 @@ function OfferSection() {
                       className="img"
                     />
                     <Card.Body>
-                      <h5>Introducing Price Lock on Domestic Flights</h5>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>Introducing Price Lock on Domestic Flights</h5>
                       <Card.Text className="cardtext">
                         Lock domestic flights fares @JUST Rs.99 & book later.
                       </Card.Text>
@@ -350,7 +352,7 @@ function OfferSection() {
                       className="img"
                     />
                     <Card.Body>
-                      <h5>Get Your Journey Insured @ JUST RS.79*</h5>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>Get Your Journey Insured @ JUST RS.79*</h5>
                       <Card.Text className="cardtext">
                         and get claim of up to Rs.3000*.
                       </Card.Text>
@@ -377,8 +379,8 @@ function OfferSection() {
                       className="img"
                     />
                     <Card.Body>
-                      <h5>FOR YOU: Up to 35% OFF* on Domestic Flights</h5>
-                      <Card.Text>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>FOR YOU: Up to 35% OFF* on Domestic Flights</h5>
+                      <Card.Text className="cardtext">
                         with Our Flight Sale Live till December.
                       </Card.Text>
                       <Row style={{ width: "8rem" }} className="booknowrow">
@@ -404,8 +406,8 @@ function OfferSection() {
                       className="img"
                     />
                     <Card.Body>
-                      <h5>FOR YOU: Up to 35% OFF* on Domestic Flights</h5>
-                      <Card.Text>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>FOR YOU: Up to 35% OFF* on Domestic Flights</h5>
+                      <Card.Text className="cardtext">
                         with Our Flight Sale Live till December.
                       </Card.Text>
                       <Row style={{ width: "8rem" }} className="booknowrow">
@@ -431,8 +433,8 @@ function OfferSection() {
                       className="img"
                     />
                     <Card.Body>
-                      <h5>FOR YOU: Up to 35% OFF* on Domestic Flights</h5>
-                      <Card.Text>
+                      <h5 style={{color:"#000000" ,fontWeight:"900",fontSize:"18px",marginBottom:"10px",lineHeight:"22px"}}>FOR YOU: Up to 35% OFF* on Domestic Flights</h5>
+                      <Card.Text className="cardtext">
                         with Our Flight Sale Live till December.
                       </Card.Text>
                       <Row style={{ width: "8rem" }} className="booknowrow">
