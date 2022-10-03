@@ -122,11 +122,116 @@ function Search() {
             </div>
             
           </Row>
+          <Row  style={{top:"2.5rem",position:"relative",background:"rgb(10, 10, 42)"}}>
+              <span className="faretypes">
+                Select A <br />
+                Fare Type:
+              </span>
+              <Button className="faretypesbutton" variant="">
+                {/* <input type="radio" name="fare" className="fareradio"/> */}
+                <span className="farespan">
+                  Regular
+                  <br />
+                  Fares
+                </span>{" "}
+              </Button>
+              <Button className="faretypesbutton1" variant="">
+                {" "}
+                {/* <input type="radio" name="fare" className="fareradio"/> */}
+                <span className="farespan">
+                  Armed Forces
+                  <br />
+                  Fares <span className="new">NEW</span>
+                </span>{" "}
+              </Button>
+              <Button className="faretypesbutton2" variant="">
+                {/* <input type="radio" name="fare" className="fareradio"/> */}
+                <span className="farespan">
+                  Student <br />
+                  Fares
+                </span>{" "}
+              </Button>
+              <Button className="faretypesbutton3" variant="">
+                {/* <input type="radio" name="fare" className="fareradio"/> */}
+                <span className="farespan">
+                  Senior Citizen <br />
+                  Fares
+                </span>{" "}
+              </Button>
+              <Button className="faretypesbutton4" variant="">
+                {/* <input type="radio" name="fare" className="fareradio"/> */}
+                <span className="farespan">
+                  Doctor & Nurses <br />
+                  Fares
+                </span>{" "}
+              </Button>
+              {/* <Button className="faretypesbutton5" variant=""><input type="radio" name="fare"/>1</Button> */}
+            </Row>
         </Container>
       </div>
-      <div className="searchsec">
-        
-      </div>
+      {/* <div className="listContainer">
+        <div className="listWrapper">
+          <div className="listSearch">
+            <h1 className="lsTitle">Search</h1>
+            <div className="lsitem">
+              <label htmlFor="">Destination</label>
+              <input placeholder="" type="text" />
+            </div>
+            <div className="lsitem">
+              
+            </div>
+            <div className="lsitem">
+              <label>Options</label>
+
+              <div className="lsOptions">
+                <div className="lsOptionItem">
+                  <span className="lsOptionText">
+                    Min price <small>per night</small>
+                  </span>
+                  <input type="number" className="lsOptionInput" />
+                </div>
+                <div className="lsOptionItem">
+                  <span className="lsOptionText">
+                    Max price <small>per night</small>
+                  </span>
+                  <input type="number" className="lsOptionInput" />
+                </div>
+                <div className="lsOptionItem">
+                  <span className="lsOptionText">Adult</span>
+                  <input
+                    type="number"
+                    min={1}
+                    className="lsOptionInput"
+                    placeholder=""
+                  />
+                </div>
+                <div className="lsOptionItem">
+                  <span className="lsOptionText">Children</span>
+                  <input
+                    type="number"
+                    min={0}
+                    className="lsOptionInput"
+                    placeholder=""
+                  />
+                </div>
+                <div className="lsOptionItem">
+                  <span className="lsOptionText">Room</span>
+                  <input
+                    type="number"
+                    min={1}
+                    className="lsOptionInput"
+                    placeholder="hey"
+                  />
+                </div>
+              </div>
+            </div>
+            <button>Search</button>
+          </div>
+          <div className="listResult">
+            
+          </div>
+        </div>
+      </div> */}
 
     </div>
   );
