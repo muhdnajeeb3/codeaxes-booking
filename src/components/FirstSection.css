@@ -228,7 +228,7 @@ box-shadow: 0 0 1.5px rgb(158, 156, 156);
     flex-shrink: 0 !important;
 }
 .faretypesbutton{
-    background-color: rgb(237, 235, 235) !important;
+    /* background-color: rgb(237, 235, 235) !important; */
     width: 8% !important;
     position: relative;
     bottom: 2.5rem;
@@ -270,7 +270,7 @@ box-shadow: 0 0 1.5px rgb(158, 156, 156);
     font-size: 12px;
     line-height: 14px !important;
     width: 8% !important;
-    background-color: rgb(237, 235, 235) !important;
+    /* background-color: rgb(237, 235, 235) !important; */
     position: relative;
     bottom: 2.5rem;
     margin-left: 1px;
@@ -286,7 +286,7 @@ box-shadow: 0 0 1.5px rgb(158, 156, 156);
     line-height: 14px !important;
     width: 10% !important;
     position: relative;
-    background-color: rgb(237, 235, 235) !important;
+    /* background-color: rgb(237, 235, 235) !important; */
     bottom: 2.5rem;
     margin-left: 1px;
 
@@ -301,7 +301,7 @@ box-shadow: 0 0 1.5px rgb(158, 156, 156);
     line-height: 14px !important;
     width: 10% !important;
     position: relative;
-    background-color: rgb(237, 235, 235) !important;
+    /* background-color: rgb(237, 235, 235) !important; */
     bottom: 2.5rem;
     margin-left: 1px;
 
