@@ -18,7 +18,7 @@ position: relative;
     -moz-box-shadow: 0 0 3px #ccc !important;
     -webkit-box-shadow: 0 0 5px #ccc !important;
     box-shadow: 0 0 10px rgb(158, 156, 156) !important;
-    /* margin-top:   2rem !important; */
+    margin-bottom:   5rem !important;
     
     
 }
@@ -133,15 +133,19 @@ position: relative;
   
  
   .aboutheading{
-    margin-left: 2rem !important;
-    margin-top: 1rem !important;
+    /* margin-left: 2rem !important; */
+    /* margin-top: 1rem !important; */
+    font-weight: 900 !important;
+    font-size: 15px !important; 
+    line-height: 10px !important;
+    margin-bottom: 10px !important;
 
   }
   .abouttext{
-    margin-left: 2rem !important;
-    margin-top: 1rem !important;
+    /* margin-left: 2rem !important; */
+    margin-top: 8px !important;
     /* font-weight: 600 !important; */
-    font-size: x-large;
-    line-height: 4rem!important;
+    font-size: 14px;
+    line-height: 14px!important;
 
   }

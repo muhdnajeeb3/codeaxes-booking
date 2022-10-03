@@ -452,7 +452,7 @@ function OfferSection() {
       </Container>
       <Row className="aboutthispage">
         <Row>
-          <h2 className="aboutheading">PRODUCT OFFERING</h2>
+          <span className="aboutheading">PRODUCT OFFERING</span>
         </Row>
         <Row>
           <p className="abouttext">

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Col, Container, Dropdown, Row } from "react-bootstrap";
 import "./FirstSection.css";
 import Navbar from "react-bootstrap/Navbar";
-import Select from 'react-select'
+import Select from "react-select";
 import Records from "../records.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -20,7 +20,7 @@ function FirstSection() {
   const [roundTrip, setRoundTrip] = useState("");
   const [multiCity, setMultiCity] = useState("");
   const [newCity, setNewCity] = useState([]);
-  const [from, setFrom] = useState();
+  const [from, setFrom] = useState("Delhi");
   const [searchTerm, setSearchTerm] = useState("");
   let navigate = useNavigate();
   const FLIGHTHANDLER = () => {
@@ -64,17 +64,23 @@ function FirstSection() {
     setNewCity(deletenewcity);
   };
   const options = [
-    { value: 'Dubai', label: 'Dubai' },
-    { value: 'Delhi', label: 'Delhi' },
-    { value: 'Kannur', label: 'Kannur' },
-    { value: 'Kolkata', label: 'Kolkata' }
-  ]
+    { value: "Dubai", label: "Dubai" },
+    { value: "Delhi", label: "Delhi" },
+    { value: "Kannur", label: "Kannur" },
+    { value: "Kolkata", label: "Kolkata" },
+  ];
   const FROMHANDLER = () => {
     // setFrom(true)
-    
   };
-  const SELECTHANDLER = (value) => {
-    setFrom(false)
+
+  const SELECTHANDLER = (e) => {
+    setFrom(e.value);
+    if(from){
+      // setFrom(false)
+    }
+  };
+  const SEARCHHANDLER = () => {
+    navigate('/search')
   }
 
   return (
@@ -199,18 +205,25 @@ function FirstSection() {
             {oneWay && (
               <>
                 <Row className="oneway">
-                  <Col className="col-3" onClick={FROMHANDLER}>
+                  <Col className="col-3" >
                     <span className="from">FROM</span>
                     {from && (
-                    <>
-                    <Select options={options} onChange={SELECTHANDLER}  />
-                    </>
-                  )}
+                      <>
+                        <Select
+                          options={options}
+                          onChange={SELECTHANDLER}
+                          value={options.filter(function (option) {
+                            return option.value === from;
+                          })}
+                          label="Single select"
+                        />
+                      </>
+                    )}
                     <br />
                     <span className="start">{from}</span>
                     <p className="subfrom">DEL,AIRPORT</p>
                   </Col>
-                  
+
                   <div className="row vertical-line"></div>
 
                   <Col className="col-3" onClick={() => alert("hey")}>
@@ -454,7 +467,7 @@ function FirstSection() {
           {/* <br /> */}
           {/* one way */}
         </Row>
-        <Button className="searchbutton" onClick={FLIGHTHANDLER}>
+        <Button className="searchbutton" onClick={SEARCHHANDLER}>
           <span className="search">SEARCH</span>
         </Button>
       </Container>

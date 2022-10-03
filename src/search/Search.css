@@ -1,0 +1,40 @@
+.searchfirstsec{
+    background-color: rgb(10, 10, 42);
+    /* height: 17rem; */
+    padding: 30px;
+    position: relative;
+    /* margin-top: 3rem; */
+}
+.searchcontainer{
+    /* margin-top: 1rem; */
+    position: relative;
+    top: 2rem;
+}
+.searchrow{
+    background-color: rgb(10, 10, 42);
+    
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+.btnsearch{
+    line-height: inherit !important;
+    background: #fff !important;
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 10%) !important;
+    padding: 11px 10px 11px 30px !important;
+    outline: 0 !important;
+    background-color: rgb(140, 140, 158) !important;
+    border: 0 !important;
+    width: 100% !important;
+    font-size: 16px !important;
+    color: #000 !important;
+    font-weight: 700 !important;
+}
+.colsearch{
+    background-color: red ;
+    width: 20px !important;
+}
+.searchstart{
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 16px;
+}
