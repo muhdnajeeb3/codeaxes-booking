@@ -246,8 +246,8 @@ function Search() {
             
           </Row>
           <div className="farerow2"  >
-          <Row  style={{top:"3rem",position:"relative",background:"transparent",marginLeft:"4rem",}}>
-              <span className="faretypes " style={{marginTop:"-15px",bottom:"17px"}}>
+          <Row  style={{top:"3rem",position:"relative",background:"transparent",marginLeft:"9rem",}}>
+              <span className="faretypes " style={{marginTop:"-11px",bottom:"17px"}}>
                 Fare Type:
               </span>
               <Button className="faretypesbutton" variant="" style={{backgroundColor:"#364c63",borderRadius:"6px 0 0 6px"}}>
@@ -308,19 +308,61 @@ function Search() {
             <h1 className="lsTitle">Popular Filter</h1>
             <div className="lsitem">
               
-              <input placeholder="" type="checkbox" style={{marginRight:"auto"}}/>
-              <label htmlFor="">Destination</label>
+              <input  type="checkbox" style={{marginRight:"auto",width:"18px"}}/>
+              <span className="filtername" >Destination</span>
+              <span className="filterprice" >$12332</span>
+
+              {/* <label htmlFor="" style={{}}>Destination</label> */}
+            </div>
+            <div className="lsitem">
+              
+              <input  type="checkbox" style={{marginRight:"auto",width:"18px"}}/>
+              <span className="filtername" >Destination</span>
+              <span className="filterprice" >$12332</span>
+
+              {/* <label htmlFor="" style={{}}>Destination</label> */}
+            </div>
+            <div className="lsitem">
+              
+              <input  type="checkbox" style={{marginRight:"auto",width:"18px"}}/>
+              <span className="filtername" >Destination</span>
+              <span className="filterprice" >$12332</span>
+
+              {/* <label htmlFor="" style={{}}>Destination</label> */}
+            </div>
+            <div className="lsitem">
+              
+              <input  type="checkbox" style={{marginRight:"auto",width:"18px"}}/>
+              <span className="filtername" >Destination</span>
+              <span className="filterprice" >$12332</span>
+
+              {/* <label htmlFor="" style={{}}>Destination</label> */}
+            </div>
+            <div className="lsitem">
+              
+              <input  type="checkbox" style={{marginRight:"auto",width:"18px"}}/>
+              <span className="filtername" >Destination</span>
+              <span className="filterprice" >$12332</span>
+
+              {/* <label htmlFor="" style={{}}>Destination</label> */}
+            </div>
+            <div className="lsitem">
+              
+              <input  type="checkbox" style={{marginRight:"auto",width:"18px"}}/>
+              <span className="filtername" >Destination</span>
+              <span className="filterprice" >$12332</span>
+              {/* <label htmlFor="" style={{}}>$12222</label> */}
             </div>
             
-            <div className="lsitem">
+            {/* <div className="lsitem">
               <label>Options</label>
 
               <div className="lsOptions">
                 
                 
               </div>
-            </div>
-            <button>Search</button>
+            </div> */}
+            {/* <button>Search</button> */}
           </div>
           <div className="listResult">
             

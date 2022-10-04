@@ -3,6 +3,8 @@
     /* height: auto; */
     min-height: 12rem;
     padding-top: 40px;
+    position: relative;
+    position: sticky !important;
     padding-left: 10px;
     /* position: relative; */
     /* margin-top: 3rem; */
@@ -50,14 +52,16 @@
     justify-content: center;
     margin-right: 4rem;
     margin-top: 20px;
-    /* position: relative; */
+    position: relative;
+    /* position: sticky; */
+    bottom: 9rem;
 
     /* background: #e5eef4; */
   }
   
   .listWrapper {
-    width: 100%;
-    max-width: 1024px;
+    width: 70rem;
+    /* max-width: 1024px; */
     display: flex;
     gap: 20px;
   }
@@ -66,6 +70,7 @@
     flex: 1;
     background-color: #fff;
     padding: 10px;
+    width: 3rem !important;
     /* border-radius: 10px; */
     position: sticky;
     top: 10px;
@@ -80,30 +85,34 @@
     font-weight: 900;
     color: rgba(0,0,0,.85);
     margin-bottom: 15px;
+    font-family: 'Lato',sans-serif !important;
+
   }
   
-  .lsItem{
-    display: flex;
-    flex-direction: column;
+  .lsitem{
+    display: flex ;
+    flex-direction: row !important ;
     gap: 5px;
     margin-bottom: 10px;
+    /* background-color: #140c28 !important; */
   }
   
-  .lsItem>label{
+  .lsitem>label{
     font-size: 12px;
   }
   
-  .lsItem>input{
+  .lsitem>input{
     height: 30px;
     border: none;
     padding: 5px;
   }
-  .lsItem>span{
-    height: 30px;
+  .lsitem>span{
+    height: 30px ;
     padding: 5px;
     background-color: white;
     display: flex;
-    align-items: center;
+    /* align-items: start !important; */
+    text-align: start !important;
     cursor: pointer;
   }
   
@@ -186,5 +195,19 @@ width: 50px;
   }
   .searchcenter{
     background-color: #140c28;
-    height: 10rem;
+    
+    height: 9rem;
+  }
+  /* filter */
+  .filtername{
+    margin-right: auto;
+    text-align: start !important;
+    /* margin-left: 2rem; */
+    font-size: 14px;
+    font-weight: 500;
+    margin-right:5rem;
+    position: relative;
+  }
+  .filterprice{
+    font-size: medium
   }
