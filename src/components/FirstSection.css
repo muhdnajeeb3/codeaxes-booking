@@ -73,7 +73,7 @@ margin-bottom: 1rem !important;
     background-color: #fff;
     position: relative;
     border-radius: 10px;
-    height: 4.7rem;
+    /* height: 4.7rem; */
     width: 80%;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -101,12 +101,13 @@ box-shadow: 0 0 3px rgb(53, 49, 49);
 }
 /* radiobutton */
 .radiobutton,.radiobutton1,.radiobutton2{
-    width: 10% !important;
-    position: relative;
+    width: auto !important;
+    /* position: relative; */
+    
     top: 5px;
     
     padding: 10px !important;
-    min-width: 12% !important;
+    /* min-width: 12% !important; */
     height: 10px;
     margin-left: 10px;
     margin-bottom: 1rem;
@@ -142,14 +143,14 @@ div.vertical-line{
 }
 .oneway{
     /* margin: 1rem !; */
-    width: 97% !important;
+    /* width: 97% !important; */
     margin-left: auto !important;
-    margin-right: auto !important;
+    /* margin-right: auto !important; */
     position: relative;
     bottom: 16px;
     border-radius: 10px;
     /* height: 300px; */
-    justify-content: space-evenly !important;
+    /* justify-content: space-evenly !important; */
     margin-bottom: 10px;
     box-shadow: 0px 1px #888888;
         -moz-box-shadow: 0 0 1px #ccc;
@@ -221,21 +222,20 @@ box-shadow: 0 0 1.5px rgb(158, 156, 156);
 .faretypes{
     color: #9b9b9b;
     font-weight: 700;
-    /* top: 17px !important; */
+    /* bottom: 17px !important; */
     position: relative;
     font-size: 12px;
     line-height: 14px !important;
-    flex-shrink: 0 !important;
 }
 .faretypesbutton{
     /* background-color: rgb(237, 235, 235) !important; */
-    width: 8% !important;
+    width: auto !important;
     position: relative;
     bottom: 2.5rem;
     margin-left: 5rem;
     display: flex;
     align-items: center;
-    height: 45px;
+    /* height: 45px; */
     min-width: 80px !important;
     max-width: 134px !important;
     font-size: 12px;
@@ -243,10 +243,10 @@ box-shadow: 0 0 1.5px rgb(158, 156, 156);
     /* margin-left: auto; */
 }
 .faretypesbutton1{
-    width: 10% !important;
-    background-color: rgb(237, 235, 235) !important;
+    width: auto!important;
+    /* background-color: rgb(237, 235, 235) !important;/ */
     position: relative;
-    height: 4rem;
+    height: auto !important;
     bottom: 2.5rem;
     cursor: pointer;
     font-size: 12px;
@@ -254,7 +254,6 @@ box-shadow: 0 0 1.5px rgb(158, 156, 156);
     border-left: solid 1px #fff;
     display: flex;
     align-items: center;
-    height: 45px;
     min-width: 80px;
     max-width: 134px;
     font-size: 12px;
@@ -264,12 +263,12 @@ box-shadow: 0 0 1.5px rgb(158, 156, 156);
 .faretypesbutton2{
     display: flex;
     align-items: center;
-    height: 45px;
+    /* height: 45px; */
     min-width: 80px;
     max-width: 134px;
     font-size: 12px;
     line-height: 14px !important;
-    width: 8% !important;
+    width: auto !important;
     /* background-color: rgb(237, 235, 235) !important; */
     position: relative;
     bottom: 2.5rem;
@@ -279,12 +278,12 @@ box-shadow: 0 0 1.5px rgb(158, 156, 156);
 .faretypesbutton3{
     display: flex;
     align-items: center;
-    height: 45px;
+    /* height: 45px; */
     min-width: 80px;
     max-width: 134px;
     font-size: 12px;
     line-height: 14px !important;
-    width: 10% !important;
+    width: auto !important;
     position: relative;
     /* background-color: rgb(237, 235, 235) !important; */
     bottom: 2.5rem;
@@ -294,12 +293,12 @@ box-shadow: 0 0 1.5px rgb(158, 156, 156);
 .faretypesbutton4{
     display: flex;
     align-items: center;
-    height: 45px;
+    /* height: 45px; */
     min-width: 80px;
     max-width: 134px;
     font-size: 12px;
     line-height: 14px !important;
-    width: 10% !important;
+    width: auto !important;
     position: relative;
     /* background-color: rgb(237, 235, 235) !important; */
     bottom: 2.5rem;

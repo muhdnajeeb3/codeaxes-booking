@@ -431,7 +431,7 @@ function FirstSection() {
                   Fares
                 </span>{" "}
               </Button>
-              <Button className="faretypesbutton1" variant="">
+              <Button className="faretypesbutton1" variant="" style={{backgroundColor:"rgb(237, 235, 235)"}}>
                 {" "}
                 {/* <input type="radio" name="fare" className="fareradio"/> */}
                 <span className="farespan">
@@ -440,21 +440,21 @@ function FirstSection() {
                   Fares <span className="new">NEW</span>
                 </span>{" "}
               </Button>
-              <Button className="faretypesbutton2" variant="">
+              <Button className="faretypesbutton2" variant="" style={{backgroundColor:"rgb(237, 235, 235)"}}>
                 {/* <input type="radio" name="fare" className="fareradio"/> */}
                 <span className="farespan">
                   Student <br />
                   Fares
                 </span>{" "}
               </Button>
-              <Button className="faretypesbutton3" variant="">
+              <Button className="faretypesbutton3" variant="" style={{backgroundColor:"rgb(237, 235, 235)"}}>
                 {/* <input type="radio" name="fare" className="fareradio"/> */}
                 <span className="farespan">
                   Senior Citizen <br />
                   Fares
                 </span>{" "}
               </Button>
-              <Button className="faretypesbutton4" variant="">
+              <Button className="faretypesbutton4" variant="" style={{backgroundColor:"rgb(237, 235, 235)"}}>
                 {/* <input type="radio" name="fare" className="fareradio"/> */}
                 <span className="farespan">
                   Doctor & Nurses <br />

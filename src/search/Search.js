@@ -246,52 +246,51 @@ function Search() {
             
           </Row>
           <div className="farerow2"  >
-          <Row  style={{top:"2.5rem",position:"relative",background:"transparent",marginLeft:"4rem",}}>
-              <span className="faretypes " style={{marginTop:"-15px",}}>
-                Select A <br />
+          <Row  style={{top:"3rem",position:"relative",background:"transparent",marginLeft:"4rem",}}>
+              <span className="faretypes " style={{marginTop:"-15px",bottom:"17px"}}>
                 Fare Type:
               </span>
-              <Button className="faretypesbutton" variant="" style={{backgroundColor:"#364c63"}}>
+              <Button className="faretypesbutton" variant="" style={{backgroundColor:"#364c63",borderRadius:"6px 0 0 6px"}}>
                 {/* <input type="checkbox" name="fare" className="fareradio" style={{borderRadius:"40px",marginRight:"5px"}} /> */}
-                <span className="farespan" style={{color:""}}>
+                <span className="farespan" style={{color:"#fff"}}>
                   Regular
                   {/* <br />
                   Fares */}
                 </span>{" "}
               </Button>
-              <Button className="faretypesbutton1" variant="" >
+              <Button className="faretypesbutton1" variant="" style={{backgroundColor:"#364c63",borderRadius:" 0 0 "}} >
                 {" "}
                 {/* <input type="radio" name="fare" className="fareradio"/> */}
-                <span className="farespan">
+                <span className="farespan" style={{color:"#fff"}}>
                   Armed Forces
                   <br />
                   {/* Fares <span className="new">NEW</span> */}
                 </span>{" "}
               </Button>
-              <Button className="faretypesbutton2" variant="" style={{backgroundColor:"#364c63"}}>
+              <Button className="faretypesbutton2" variant="" style={{backgroundColor:"#364c63",borderRadius:" 0 0 "}}>
                 {/* <input type="radio" name="fare" className="fareradio"/> */}
-                <span className="farespan">
+                <span className="farespan" style={{color:"#fff"}}>
                   Student <br />
                   {/* Fares */}
                 </span>{" "}
               </Button>
-              <Button className="faretypesbutton3" variant="" style={{backgroundColor:"#364c63"}}>
+              <Button className="faretypesbutton3" variant="" style={{backgroundColor:"#364c63",borderRadius:" 0 0 "}}>
                 {/* <input type="radio" name="fare" className="fareradio"/> */}
-                <span className="farespan">
+                <span className="farespan" style={{color:"#fff"}}>
                   Senior Citizen <br />
                   {/* Fares */}
                 </span>{" "}
               </Button>
-              <Button className="faretypesbutton4" variant="" style={{backgroundColor:"#364c63"}}>
+              <Button className="faretypesbutton4" variant="" style={{backgroundColor:"#364c63",borderRadius:" 0 0 "}}>
                 {/* <input type="radio" name="fare" className="fareradio"/> */}
-                <span className="farespan">
+                <span className="farespan" style={{color:"#fff"}}>
                   Doctor & Nurses <br />
                   {/* Fares */}
                 </span>{" "}
               </Button>
-              <Button className="faretypesbutton4" variant="" style={{backgroundColor:"#364c63"}}>
+              <Button className="faretypesbutton4" variant="" style={{backgroundColor:"#364c63",borderRadius:" 0 6px 6px 0 "}}>
                 {/* <input type="radio" name="fare" className="fareradio"/> */}
-                <span className="farespan">
+                <span className="farespan" style={{color:"#fff"}}>
                   Double Seat <br />
                   {/* Fares */}
                 </span>{" "}
@@ -302,60 +301,23 @@ function Search() {
           
         {/* </Container> */}
       </div>
-      {/* <div className="listContainer">
+      <div className="searchcenter"></div>
+      <div className="listContainer">
         <div className="listWrapper">
           <div className="listSearch">
-            <h1 className="lsTitle">Search</h1>
-            <div className="lsitem">
-              <label htmlFor="">Destination</label>
-              <input placeholder="" type="text" />
-            </div>
+            <h1 className="lsTitle">Popular Filter</h1>
             <div className="lsitem">
               
+              <input placeholder="" type="checkbox" style={{marginRight:"auto"}}/>
+              <label htmlFor="">Destination</label>
             </div>
+            
             <div className="lsitem">
               <label>Options</label>
 
               <div className="lsOptions">
-                <div className="lsOptionItem">
-                  <span className="lsOptionText">
-                    Min price <small>per night</small>
-                  </span>
-                  <input type="number" className="lsOptionInput" />
-                </div>
-                <div className="lsOptionItem">
-                  <span className="lsOptionText">
-                    Max price <small>per night</small>
-                  </span>
-                  <input type="number" className="lsOptionInput" />
-                </div>
-                <div className="lsOptionItem">
-                  <span className="lsOptionText">Adult</span>
-                  <input
-                    type="number"
-                    min={1}
-                    className="lsOptionInput"
-                    placeholder=""
-                  />
-                </div>
-                <div className="lsOptionItem">
-                  <span className="lsOptionText">Children</span>
-                  <input
-                    type="number"
-                    min={0}
-                    className="lsOptionInput"
-                    placeholder=""
-                  />
-                </div>
-                <div className="lsOptionItem">
-                  <span className="lsOptionText">Room</span>
-                  <input
-                    type="number"
-                    min={1}
-                    className="lsOptionInput"
-                    placeholder="hey"
-                  />
-                </div>
+                
+                
               </div>
             </div>
             <button>Search</button>
@@ -364,7 +326,7 @@ function Search() {
             
           </div>
         </div>
-      </div> */}
+      </div>
 
     </div>
   );
