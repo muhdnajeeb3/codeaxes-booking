@@ -1,5 +1,7 @@
 .searchfirstsec{
     background-color: rgb(10, 10, 42);
+    /* background-image: linear-gradient(0deg,#15457b,#051423); */
+    width: 100%;
     /* height: auto; */
     min-height: 12rem;
     padding-top: 40px;
@@ -62,6 +64,7 @@
   .listWrapper {
     width: 70rem;
     /* max-width: 1024px; */
+    flex-wrap: wrap;
     display: flex;
     gap: 20px;
   }
@@ -72,7 +75,7 @@
     padding: 10px;
     width: 3rem !important;
     /* border-radius: 10px; */
-    position: sticky;
+    /* position: sticky; */
     top: 10px;
     -moz-box-shadow: 0 0 3px #ccc;
     -webkit-box-shadow: 0 0 3px #ccc;
@@ -80,7 +83,7 @@
     height: max-content;
   }
   
-  .lsTitle{
+  .filtertitle{
     font-size: 16px;
     font-weight: 900;
     color: rgba(0,0,0,.85);
@@ -89,20 +92,22 @@
 
   }
   
-  .lsitem{
+  .filtername{
     display: flex ;
     flex-direction: row !important ;
     gap: 5px;
     margin-bottom: 10px;
+    text-align: end !important;
     /* background-color: #140c28 !important; */
   }
   
-  .lsitem>label{
+  .filtername>label{
     font-size: 12px;
   }
   
-  .lsitem>input{
+  .filtername>input{
     height: 30px;
+    text-align: center !important;
     border: none;
     padding: 5px;
   }
@@ -194,7 +199,11 @@ width: 50px;
     flex: 3;
   }
   .searchcenter{
-    background-color: #140c28;
+    background-color: rgb(10, 10, 42);
+
+    
+     /* background-image: linear-gradient(0deg,#15457b,#051423); */
+    width: 100%;
     
     height: 9rem;
   }
@@ -210,4 +219,31 @@ width: 50px;
   }
   .filterprice{
     font-size: medium
+  }
+  .filtersec{
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 5px rgb(158, 156, 156);
+  }
+  /* filtersec */
+  .filterright{
+    /* float: right; */
+    width: 50%;
+  }
+  .filterleft{
+    width: 50%;
+
+    float: left !important;
+  }
+  .filtermain{
+    background-color: #e5eef4;;
+    position: relative;
+    bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }.filterleft{
+    position: relative;
+    bottom: 7rem;
+    margin-right: 53rem !important;
   }
