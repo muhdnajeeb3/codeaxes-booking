@@ -418,11 +418,12 @@ function FirstSection() {
               </>
             )}
             {/* FARE TYPES */}
-            <Row className="row3">
-              <span className="faretypes">
+            <span className="faretypes">
                 Select A <br />
                 Fare Type:
               </span>
+            <Row className="row3">
+              
               <Button className="faretypesbutton" style={{backgroundColor:"rgb(237, 235, 235)"}} variant="">
                 {/* <input type="radio" name="fare" className="fareradio"/> */}
                 <span className="farespan">
