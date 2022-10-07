@@ -20,7 +20,10 @@ function Search() {
   const [oneway, setOneway] = useState(true);
   const [roundTrip, setRoundTrip] = useState(false);
   const [multiCity, setMultiCity] = useState(false);
-  const [viewPrices,setViewPrices] = useState("")
+  const [viewPrices,setViewPrices] = useState("");
+  const [optionsavailable,setOptionsavailble] = useState("");
+  const [multiCardPrices,setMultiCardPrices] = useState("");
+
 
   const OnewayHandler = () => {
     setOneway(true);
@@ -621,7 +624,7 @@ function Search() {
               <Row className="mysafetycard">
                 <h1
                   style={{
-                    fontSize: "18px",
+                    fontSize: "14px",
                     marginTop: "12px",
                     fontWeight: "bolder",
                     marginLeft: "1rem",
@@ -646,9 +649,7 @@ function Search() {
                   with travel opening up.govt,advisories and state/UT guidelines
                   are constantly evolving,Please check the latest updates before
                   travelling.
-                  <Link to="/mysafety" style={{ textDecoration: "none" }}>
-                    KNOW MORE
-                  </Link>
+                  
                 </span>
               </Row>
             </Row>
@@ -829,7 +830,10 @@ function Search() {
                 backgroundColor: "#f3f6f9",
                 // marginTop: "10px",
                 marginLeft: "2rem",
-                fontWeight:"400"
+                fontWeight:"400",
+                // paddingBottom:"20p
+                lineHeight:"0"
+                // height:"40px"
               }}
               className="viewprices"
             >
@@ -912,40 +916,6 @@ function Search() {
             
             </>
           )}
-              
-                {/* <Row style={{background:"#f3f6f9",padding:"10px 0",display:"flex",fontFamily:"sans-serif",fontWeight:"800",lineHeight:"1.5",gap:"",}} >
-                  <Col sm={2}><span style={{fontSize:"12px",marginLeft:""}}>FARES</span></Col>
-                  <Col sm={1} ><span style={{fontSize:"10px",marginLeft:""}}>CABIN BAG</span></Col>
-                  <Col sm={1}><span style={{fontSize:"10px",marginLeft:""}}>CHECK-IN</span></Col>
-                  <Col sm={2}><span style={{fontSize:"10px",marginLeft:""}}>CANCELLATION</span></Col>
-                  <Col sm={2}><span style={{fontSize:"10px" ,marginLeft:""}}>DATE CHANGE</span></Col>
-                  <Col xs={1}><span style={{fontSize:"10px",marginLeft:""}}>SEAT</span></Col>
-                  <Col xs={1}><span style={{fontSize:"10px",marginLeft:""}}>MEAL</span></Col>
-                </Row>
-                <Row className="viewprices">
-                <Col sm={2}><span style={{fontSize:"12px",marginLeft:""}}>FARES</span></Col>
-                  <Col sm={1} ><span style={{fontSize:"10px",marginLeft:""}}>CABIN BAG</span></Col>
-                  <Col sm={1}><span style={{fontSize:"10px",marginLeft:""}}>CHECK-IN</span></Col>
-                  <Col sm={2}><span style={{fontSize:"10px",marginLeft:""}}>CANCELLATION</span></Col>
-                  <Col sm={2}><span style={{fontSize:"10px" ,marginLeft:""}}>DATE CHANGE</span></Col>
-                  <Col xs={1}><span style={{fontSize:"10px",marginLeft:""}}>SEAT</span></Col>
-                  <Col xs={1}><span style={{fontSize:"10px",marginLeft:""}}>MEAL</span></Col>
-                </Row> */}
-                {/* <Row className="viewprices">
-                <Col xs={2}>
-                  <span style={{fontSize:"10px",marginLeft:"0.4rem"}}>Saver</span>
-                  <br />
-                  <span style={{fontSize:"10px",marginLeft:"0.4rem"}}>Fare offered by airlines.</span>
-
-                </Col>
-                  <Col xs lg='2'><span style={{fontSize:"10px",marginLeft:"0rem"}}>7kgs</span></Col>
-                  <Col xs lg='2'><span style={{fontSize:"10px",marginLeft:"-4rem"}}>15 Kgs</span></Col>
-                  <Col xs={2}><span style={{fontSize:"10px",marginLeft:"-8rem"}}>cancelation fee <br /><span style={{fontSize:"10px",marginLeft:"-8rem"}}>Starting</span> </span></Col>
-                  <Col xs={2}><span style={{fontSize:"10px" ,marginLeft:"-10rem"}}>Date Change fee <br /><span style={{fontSize:"10px",marginLeft:"-10rem"}}>Starting</span>  </span></Col>
-                  <Col xs={1}><span style={{fontSize:"10px",marginLeft:"-12rem"}}>Middle Seat Free,<br/><span style={{fontSize:"10px",marginLeft:"-12rem"}}>Window/Aisle</span><br /><span style={{fontSize:"10px",marginLeft:"-12rem"}}>Chargeable</span></span></Col>
-                  <Col xs={1}><span style={{fontSize:"10px",marginLeft:"-9rem"}}>----</span></Col>
-                </Row> */}
-              {/* </Row> */}
             <Row
               style={{
                 backgroundColor: "#fff",
@@ -1111,6 +1081,444 @@ function Search() {
                   </Link>
                 </span>
               </Row>
+            </Row>
+            {/* multi shadow card */}
+            <Row
+              style={{
+                backgroundColor: "#b9daf0",
+                marginTop: "10px",
+                marginLeft: "2rem",
+                borderRadius:"2px",
+                borderTop:"8px solid #e5eef5",
+                fontFamily:"sans-serif"
+                // fontWeight:"400"
+              }}
+              className="listingcards"
+            >
+              <Row style={{justifyContent:"",lineHeight:"1.5",display:"flex"}}>
+                <div>
+
+                
+                <div className="" style={{float:"left"}}><span style={{fontWeight:"700",fontSize:"18px",fontFamily:"sans-serif"}}>Some more options with stopovers($8,905-$12,009)</span></div>
+                <div className="" style={{float:"right"}}><span  style={{fontSize:"13px",fontWeight:"400",cursor:"pointer"}} onClick={()=>setOptionsavailble(!optionsavailable)}>2 options available</span></div>
+                </div>
+              </Row>
+              <Row className="multicards" style={{background:"#fff",padding:'16px 20px 10px',zIndex:"1",borderRadius:"4px",borderTop:"none",marginTop:"20px",marginLeft:"5px"}}>
+              <Col>
+                  <FontAwesomeIcon icon={faPlane} size="1x" />
+
+                  <span className="airlinenames" style={{ marginLeft: "8px" ,lineHeight:"1.5"}}>
+                    IndiGo
+                  </span>
+                  <br />
+                  <span
+                    style={{
+                      fontWeight: "400",
+                      fontSize: "11px",
+                      marginLeft: "2.2rem",
+                      color: "#878787",
+                      lineHeight:"1.5"
+
+                    }}
+                  >
+                    6E 5009
+                  </span>
+                </Col>
+                <Col>
+                  <span
+                    style={{
+                      fontSize: "18px",
+                      fontWeight: "900",
+                      fontFamily: "sans-serif",
+                      color: "#000",
+                      display: "inline-flex",
+                      lineHeight:"1.5"
+                    }}
+                  >
+                    21:30
+                  </span>
+                  <br />
+                  <span
+                    style={{
+                      fontSize: "13px",
+                      fontFamily: "sans-serif",
+                      fontWeight: "400",
+                      lineHeight: "1.5",
+                    }}
+                  >
+                    New Delhi
+                  </span>
+                </Col>
+                <Col>
+                  <span
+                    style={{
+                      fontSize: "13px",
+                      fontFamily: "sans-serif",
+                      fontWeight: "400",
+                      color: "rgba(0,0,0,.85)",
+                      lineHeight:"1.5"
+
+                    }}
+                  >
+                    02 h 45 m
+                  </span>
+                  <br />
+                  <span
+                    style={{
+                      textAlign: "center",
+                      fontSize: "11px",
+                      fontWeight: "600",
+                      whiteSpace: "nowrap",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                      width: "120px",
+                      color: "#6d7278",
+                      lineHeight:"1.5"
+                    }}
+                  >
+                    Non stop
+                  </span>
+                </Col>
+                <Col>
+                  <span
+                    style={{
+                      fontSize: "18px",
+                      fontWeight: "900",
+                      fontFamily: "sans-serif",
+                      color: "#000",
+                      display: "inline-flex",
+                      lineHeight:"1.5"
+                    }}
+                  >
+                    01:15
+                  </span>
+                  <br />
+                  <span
+                    style={{
+                      fontSize: "13px",
+                      lineHeight:"1.5",
+                      fontFamily: "sans-serif",
+                      fontWeight: "500",
+                    }}
+                  >
+                    Bengaluru
+                  </span>
+                </Col>
+                <Col>
+                  <span
+                    style={{
+                      lineHeight:"1.5",
+                      fontWeight: "900",
+                      fontSize: "19px",
+                      fontFamily: "sans-serif",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    $4443
+                  </span>
+                </Col>
+                <Col>
+                  <Button
+                    style={{
+                      background: "#daebff",
+                      fontWeight: "700",
+                      width: "120px",
+                      fontSize: "13px",
+                      alignItems: "center",
+                      lineHeight: "inherit",
+                      fontFamily: "inherit",
+                      justifyContent: "center",
+                      display: "flex",
+                      height: "31px",
+                      padding: "0 8px",
+                      color: "#008cff",
+                      borderRadius: "96px",
+                      border: "1px solid #008cff",
+                    }}
+                    onClick={()=>setMultiCardPrices(!multiCardPrices)}
+                  >
+                    VIEW PRICES
+                  </Button>
+                </Col>
+
+
+              </Row>
+              {multiCardPrices && (
+                <>
+                <Row
+              style={{
+                backgroundColor: "#f3f6f9",
+                // marginTop: "10px",
+                marginLeft: "5px",
+                fontWeight:"400",
+                // paddingBottom:"20p
+                lineHeight:"0"
+                // height:"40px"
+              }}
+              className="viewprices"
+            >
+              
+               <Col style={{maxWidth:"100px"}}><span style={{fontSize:"10px",marginLeft:""}}>FARES</span></Col>
+               <Col style={{maxWidth:"72px",}} ><span style={{fontSize:"10px",marginLeft:""}}>Other</span></Col>
+                  <Col style={{maxWidth:"79px",marginRight:"-1rem"}} ><span style={{fontSize:"10px",marginLeft:""}}>CABIN BAG</span></Col>
+                  <Col style={{maxWidth:"73px",marginRight:"-1rem"}}><span style={{fontSize:"10px",}}>CHECK-IN</span></Col>
+                  <Col style={{maxWidth:"100px",marginRight:"-1rem"}}><span style={{fontSize:"10px",marginLeft:""}}>CANCELLATION</span></Col>
+                  <Col style={{maxWidth:"110px",marginRight:"-1rem"}}><span style={{fontSize:"10px" ,marginLeft:""}}>DATE CHANGE</span></Col>
+                  <Col style={{maxWidth:"80px",marginRight:"-1rem"}}><span style={{fontSize:"10px",marginLeft:""}}>SEAT</span></Col>
+                  <Col style={{maxWidth:"70px"}}><span style={{fontSize:"10px",marginLeft:""}}>MEAL</span></Col>
+
+            </Row>
+            <Row
+              style={{
+                backgroundColor: "#fff",
+                // marginTop: "10px",
+                marginLeft: "5px",
+                fontFamily:"sans-serif",
+                lineHeight:"0.8"
+              }}
+              className="viewprices"
+            >
+               
+                  <Col style={{maxWidth:"100px"}}><span style={{fontSize:"14px",fontWeight:"900"}}>GoFirst <br/></span> <span style={{fontWeight:"400",fontSize:"12px",lineHeight:"1.5"}}> Fare offered by airlines.</span> </Col>
+               <Col style={{maxWidth:"87px",}} ><span style={{fontSize:"10px",marginLeft:""}}>------</span></Col>
+                  <Col style={{maxWidth:"79px",marginRight:"-1rem"}} ><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>7Kg</span></Col>
+                  <Col style={{maxWidth:"73px",marginRight:"-1rem"}}><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>15Kg</span></Col>
+                  <Col style={{maxWidth:"100px",marginRight:"-1rem"}}><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>Cancellation fee starting $3900</span></Col>
+                  <Col style={{maxWidth:"110px",marginRight:"-1rem"}}><span style={{fontSize:"12px" ,fontWeight:"400",marginLeft:""}}>Date Change fee starting $3450</span></Col>
+                  <Col style={{maxWidth:"80px",marginRight:"00px"}}><span style={{fontSize:"12px" ,fontWeight:"400",marginLeft:""}}>Chargeable</span></Col>
+                  <Col style={{maxWidth:"70px",marginRight:"1rem"}}><span style={{fontSize:"10px",marginLeft:""}}>----</span></Col>
+
+                  <Col style={{maxWidth:"95px",justifyContent:"end",alignItems:"end"}}>
+                  <span
+                    style={{
+                      lineHeight:"1.5",
+                      fontWeight: "900",
+                      fontSize: "19px",
+                      fontFamily: "sans-serif",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    $2643
+                  </span><br/>
+                  <Button style={{width:"124px",fontWeight:"900",backgroundImage:"linear-gradient(97deg,#53b2fe,#065af3 130%)",borderRadius:"35px",boxShadow:"0 1px 7px 0 rgb(0 0 0 / 22%)",color:"#fff",alignItems:"center",justifyContent:"center",height:"32px",padding:"0 20px",outline:"none",fontSize:"13px"}}>BOOK NOW</Button>
+                  </Col> 
+            </Row>
+            <Row
+              style={{
+                backgroundColor: "#fff",
+                // marginTop: "10px",
+                marginLeft: "5px",
+                fontFamily:"sans-serif",
+                lineHeight:"0.8"
+              }}
+              className="viewprices"
+            >
+                  <Col style={{maxWidth:"100px"}}><span style={{fontSize:"14px",fontWeight:"900"}}>GoFlexi <br/></span> <span style={{fontWeight:"400",fontSize:"12px",lineHeight:"1.5"}}> Fare offered by airlines.</span> </Col>
+               <Col style={{maxWidth:"87px",}} ><span style={{fontSize:"10px",marginLeft:""}}>------</span></Col>
+                  <Col style={{maxWidth:"79px",marginRight:"-1rem"}} ><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>7Kg</span></Col>
+                  <Col style={{maxWidth:"73px",marginRight:"-1rem"}}><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>15Kg</span></Col>
+                  <Col style={{maxWidth:"100px",marginRight:"-1rem"}}><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>Cancellation fee starting $3900</span></Col>
+                  <Col style={{maxWidth:"110px",marginRight:"-1rem"}}><span style={{fontSize:"12px" ,fontWeight:"400",marginLeft:""}}> Free Date Change allowed upto 2hrs before</span></Col>
+                  <Col style={{maxWidth:"80px",marginRight:"00px"}}><span style={{fontSize:"12px" ,fontWeight:"400",marginLeft:""}}>Free seats availble</span></Col>
+                  <Col style={{maxWidth:"70px",marginRight:"1rem"}}><span style={{fontSize:"11px" ,fontWeight:"400",marginLeft:""}}>Get complementary meals</span></Col>
+
+                  <Col style={{maxWidth:"95px",justifyContent:"end",alignItems:"end"}}>
+                  <span
+                    style={{
+                      lineHeight:"1.5",
+                      fontWeight: "900",
+                      fontSize: "19px",
+                      fontFamily: "sans-serif",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    $2643
+                  </span><br/>
+                  <Button style={{width:"124px",fontWeight:"900",backgroundImage:"linear-gradient(97deg,#53b2fe,#065af3 130%)",borderRadius:"35px",boxShadow:"0 1px 7px 0 rgb(0 0 0 / 22%)",color:"#fff",alignItems:"center",justifyContent:"center",height:"32px",padding:"0 20px",outline:"none",fontSize:"13px"}}>BOOK NOW</Button>
+                  </Col> 
+            </Row>
+            <Row
+              style={{
+                backgroundColor: "#fff",
+                // marginTop: "10px",
+                marginLeft: "5px",
+                fontFamily:"sans-serif",
+                lineHeight:"0.8"
+              }}
+              className="viewprices"
+            >
+                  <Col style={{maxWidth:"100px"}}><span style={{fontSize:"14px",fontWeight:"900"}}>GoMore <br/></span> <span style={{fontWeight:"400",fontSize:"12px",lineHeight:"1.5"}}> Fly stress free! Keep the middle seat vacant.</span> </Col>
+               <Col style={{maxWidth:"87px",}} ><span style={{fontSize:"12px",marginLeft:"",fontWeight:"400"}}>1st/2nd row window or aisle seat included,with vacant middle seat</span></Col>
+                  <Col style={{maxWidth:"79px",marginRight:"-1rem"}} ><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>7Kg</span></Col>
+                  <Col style={{maxWidth:"73px",marginRight:"-1rem"}}><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>15Kg</span></Col>
+                  <Col style={{maxWidth:"100px",marginRight:"-1rem"}}><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>Cancellation fee starting $3900</span></Col>
+                  <Col style={{maxWidth:"110px",marginRight:"-1rem"}}><span style={{fontSize:"12px" ,fontWeight:"400",marginLeft:""}}>Date Change allowed fee starting $3000</span></Col>
+                  <Col style={{maxWidth:"80px",marginRight:"00px"}}><span style={{fontSize:"12px" ,fontWeight:"400",marginLeft:""}}>Free seats availble</span></Col>
+                  <Col style={{maxWidth:"70px",marginRight:"1rem"}}><span style={{fontSize:"11px" ,fontWeight:"400",marginLeft:""}}>----</span></Col>
+
+                  <Col style={{maxWidth:"95px",justifyContent:"end",alignItems:"end"}}>
+                  <span
+                    style={{
+                      lineHeight:"1.5",
+                      fontWeight: "900",
+                      fontSize: "19px",
+                      fontFamily: "sans-serif",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    $2643
+                  </span><br/>
+                  <Button style={{width:"124px",fontWeight:"900",backgroundImage:"linear-gradient(97deg,#53b2fe,#065af3 130%)",borderRadius:"35px",boxShadow:"0 1px 7px 0 rgb(0 0 0 / 22%)",color:"#fff",alignItems:"center",justifyContent:"center",height:"32px",padding:"0 20px",outline:"none",fontSize:"13px"}}>BOOK NOW</Button>
+                  </Col> 
+            </Row>
+            
+                </>
+              )}
+              { optionsavailable && (
+                <>
+                <Row className="multidropshadow" style={{background:"#fff",padding:'16px 20px 10px',zIndex:"1",borderRadius:"4px",borderTop:"none",marginTop:"20px",marginLeft:"5px"}}>
+              <Col>
+                  <FontAwesomeIcon icon={faPlane} size="1x" />
+
+                  <span className="airlinenames" style={{ marginLeft: "8px" ,lineHeight:"1.5"}}>
+                    IndiGo
+                  </span>
+                  <br />
+                  <span
+                    style={{
+                      fontWeight: "400",
+                      fontSize: "11px",
+                      marginLeft: "2.2rem",
+                      color: "#878787",
+                      lineHeight:"1.5"
+
+                    }}
+                  >
+                    6E 5009
+                  </span>
+                </Col>
+                <Col>
+                  <span
+                    style={{
+                      fontSize: "18px",
+                      fontWeight: "900",
+                      fontFamily: "sans-serif",
+                      color: "#000",
+                      display: "inline-flex",
+                      lineHeight:"1.5"
+                    }}
+                  >
+                    21:30
+                  </span>
+                  <br />
+                  <span
+                    style={{
+                      fontSize: "13px",
+                      fontFamily: "sans-serif",
+                      fontWeight: "400",
+                      lineHeight: "1.5",
+                    }}
+                  >
+                    New Delhi
+                  </span>
+                </Col>
+                <Col>
+                  <span
+                    style={{
+                      fontSize: "13px",
+                      fontFamily: "sans-serif",
+                      fontWeight: "400",
+                      color: "rgba(0,0,0,.85)",
+                      lineHeight:"1.5"
+
+                    }}
+                  >
+                    02 h 45 m
+                  </span>
+                  <br />
+                  <span
+                    style={{
+                      textAlign: "center",
+                      fontSize: "11px",
+                      fontWeight: "600",
+                      whiteSpace: "nowrap",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                      width: "120px",
+                      color: "#6d7278",
+                      lineHeight:"1.5"
+                    }}
+                  >
+                    Non stop
+                  </span>
+                </Col>
+                <Col>
+                  <span
+                    style={{
+                      fontSize: "18px",
+                      fontWeight: "900",
+                      fontFamily: "sans-serif",
+                      color: "#000",
+                      display: "inline-flex",
+                      lineHeight:"1.5"
+                    }}
+                  >
+                    01:15
+                  </span>
+                  <br />
+                  <span
+                    style={{
+                      fontSize: "13px",
+                      lineHeight:"1.5",
+                      fontFamily: "sans-serif",
+                      fontWeight: "500",
+                    }}
+                  >
+                    Bengaluru
+                  </span>
+                </Col>
+                <Col>
+                  <span
+                    style={{
+                      lineHeight:"1.5",
+                      fontWeight: "900",
+                      fontSize: "19px",
+                      fontFamily: "sans-serif",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    $4443
+                  </span>
+                </Col>
+                <Col>
+                  <Button
+                    style={{
+                      background: "#daebff",
+                      fontWeight: "700",
+                      width: "120px",
+                      fontSize: "13px",
+                      alignItems: "center",
+                      lineHeight: "inherit",
+                      fontFamily: "inherit",
+                      justifyContent: "center",
+                      display: "flex",
+                      height: "31px",
+                      padding: "0 8px",
+                      color: "#008cff",
+                      borderRadius: "96px",
+                      border: "1px solid #008cff",
+                    }}
+                  >
+                    VIEW PRICES
+                  </Button>
+                </Col>
+
+
+              </Row>
+                </>
+              )}
+              
+
             </Row>
           </Col>
         </Row>

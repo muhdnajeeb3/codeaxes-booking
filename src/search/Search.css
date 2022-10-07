@@ -294,6 +294,45 @@ width: 50px;
   border-radius: 2px;
   position: relative;
 }
+.multicards{
+  padding: 16px 14px !important;
+  border-top: 8px solid #e5eef5;
+  background: #fff;
+  border-radius: 2px;
+  position: relative;
+  border:1px solid #cccccc;
+  position: relative;
+  box-shadow: 0 -20px 0 -5px none,
+  0 -20px 0 -5px rgba(247, 243, 243, 0.5),
+  0 -40px 0 -15px rgba(0,0,0,0.5);
+}
+.multicards::before{
+  content: '';
+     position: absolute;
+     top: -10px;
+     left: 50%;
+     background: white;
+     opacity: 0.5;
+     transform: translateX(-50%);
+     width: 98%;
+     height: 100%;
+     /* border: 1px solid #cccccc; */
+     border-radius: 4px;
+     z-index: -1;
+}.multicards::after{
+  content: '';
+   position: absolute;
+   top: -20px;
+   left: 50%;
+   background: white;
+   opacity: 0.4;
+   transform: translateX(-50%);
+   width: 95%;
+  height: 100%;
+   border: 1px solid #cccccc;
+  border-radius: 4px;
+ z-index: -2;
+}
 .viewprices{
   padding: 16px 14px !important;
   border-top: 8px solid #f3f6f9;
@@ -305,6 +344,7 @@ width: 50px;
 .viewprices{
   padding: 16px 14px !important;
   /* border-top: 8px solid #e5eef5; */
+  /* padding-left: 12rem !important; */
   background: #fff;
   padding: 10px !important;
   border-radius: 2px;
@@ -322,52 +362,6 @@ width: 50px;
     font-family: 'Lato',sans-serif !important;
     font-weight: 700 !important;
   }
-  /*  */
-  .viewFareRowHead {
-    display: flex;
-    padding: 10px 0;
-    background-color: #f3f6f9;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 10px;
-}
-.fareName {
-  width: 160px;
-  padding: 0 10px 0 20px;
-}
-.viewFareRowHead .viewFareRowContent {
-  font-size: 10px;
-}
-.viewFareRowContent {
-  width: 580px;
-  display: flex;
-  font-size: 12px;
-  margin-right: 17px;
-}
-html[dir='ltr'] .appendRight5 {
-  margin-right: 5px;
-}
-.makeFlex .flexOne {
-  flex: 1;
-}
-.flexOne {
-  flex: 1;
-}
-.otherClass {
-  max-width: 60px;
-}
-.appendRight5 {
-  margin-right: 5px;
-}
-.viewFareBtnCol {
-  width: 140px;
-  padding-right: 10px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  white-space: nowrap;
-}
 
   @media screen and (max-width:1120px) {
     .colmn6{
