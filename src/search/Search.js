@@ -20,6 +20,7 @@ function Search() {
   const [oneway, setOneway] = useState(true);
   const [roundTrip, setRoundTrip] = useState(false);
   const [multiCity, setMultiCity] = useState(false);
+  const [viewPrices,setViewPrices] = useState("")
 
   const OnewayHandler = () => {
     setOneway(true);
@@ -791,6 +792,7 @@ function Search() {
                       borderRadius: "96px",
                       border: "1px solid #008cff",
                     }}
+                    onClick={()=>setViewPrices(!viewPrices)}
                   >
                     VIEW PRICES
                   </Button>
@@ -820,22 +822,25 @@ function Search() {
               </Row>
             </Row>
             {/* VIEW PRICES */}
-            {/* <Row style={{background:"#fff",marginLeft:"2.7rem",}} className=''> */}
+          {viewPrices && (
+            <>
             <Row
               style={{
                 backgroundColor: "#f3f6f9",
                 // marginTop: "10px",
                 marginLeft: "2rem",
+                fontWeight:"400"
               }}
               className="viewprices"
             >
-               <Col sm={2}><span style={{fontSize:"12px",marginLeft:""}}>FARES</span></Col>
-                  <Col sm={1} ><span style={{fontSize:"11px",marginLeft:""}}>CABIN BAG</span></Col>
-                  <Col sm={1}><span style={{fontSize:"11px",marginLeft:""}}>CHECK-IN</span></Col>
-                  <Col sm={2}><span style={{fontSize:"11px",marginLeft:""}}>CANCELLATION</span></Col>
-                  <Col sm={2}><span style={{fontSize:"11px" ,marginLeft:""}}>DATE CHANGE</span></Col>
-                  <Col xs={1}><span style={{fontSize:"11px",marginLeft:""}}>SEAT</span></Col>
-                  <Col xs={1}><span style={{fontSize:"11px",marginLeft:""}}>MEAL</span></Col>
+              
+               <Col style={{maxWidth:"120px"}}><span style={{fontSize:"10px",marginLeft:""}}>FARES</span></Col>
+                  <Col style={{maxWidth:"79px"}} ><span style={{fontSize:"10px",marginLeft:""}}>CABIN BAG</span></Col>
+                  <Col style={{maxWidth:"73px"}}><span style={{fontSize:"10px",marginLeft:""}}>CHECK-IN</span></Col>
+                  <Col style={{maxWidth:"100px"}}><span style={{fontSize:"10px",marginLeft:""}}>CANCELLATION</span></Col>
+                  <Col style={{maxWidth:"110px"}}><span style={{fontSize:"10px" ,marginLeft:""}}>DATE CHANGE</span></Col>
+                  <Col style={{maxWidth:"80px"}}><span style={{fontSize:"10px",marginLeft:""}}>SEAT</span></Col>
+                  <Col style={{maxWidth:"70px"}}><span style={{fontSize:"10px",marginLeft:""}}>MEAL</span></Col>
 
             </Row>
             <Row
@@ -848,14 +853,15 @@ function Search() {
               }}
               className="viewprices"
             >
-               <Col xs='auto'><span style={{fontSize:"14px",fontWeight:"900"}}>Saver <br/> <span style={{fontWeight:"400",fontSize:"12px",lineHeight:"1.5"}}> Fare offered by airlines.</span> </span></Col>
-                  <Col xs='auto' ><span style={{fontSize:"12px",fontWeight:"400"}}>7KG</span></Col>
-                  <Col xs='auto'><span style={{fontSize:"12px",fontWeight:"400"}}>15Kg</span></Col>
-                  <Col xs='auto'><span style={{fontSize:"12px",fontWeight:"400"}}>Cancellation Fee <br />startinig $3,500</span></Col>
-                  <Col xs='auto'><span style={{fontSize:"12px" ,fontWeight:"400"}}>Date Change fee <br />starting $3,250</span></Col>
-                  <Col xs='auto'><span style={{fontSize:"12px",fontWeight:"400"}}>Middle Seat Free, <br />Windows/Aisle Chargeable</span></Col>
-                  <Col xs={1}><span style={{fontSize:"11px",fontWeight:"400"}}>-----</span></Col>
-                  <Col sm={1}>
+               
+                  <Col style={{maxWidth:"150px"}}><span style={{fontSize:"14px",fontWeight:"900"}}>Saver <br/></span> <span style={{fontWeight:"400",fontSize:"12px",lineHeight:"1.5"}}> Fare offered by airlines.</span> </Col>
+                  <Col style={{maxWidth:"60px"}} ><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>7Kg</span></Col>
+                  <Col style={{maxWidth:"55px"}}><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>15Kg</span></Col>
+                  <Col style={{maxWidth:"85px"}}><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>Cancellation fee starting $3900</span></Col>
+                  <Col style={{maxWidth:"95px"}}><span style={{fontSize:"12px" ,fontWeight:"400",marginLeft:""}}>Date Change fee starting $3450</span></Col>
+                  <Col style={{maxWidth:"120px"}}><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>Middle Seat Free</span></Col>
+                  <Col style={{maxWidth:"95px"}}><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>----</span></Col>
+                  <Col style={{maxWidth:"95px"}}>
                   <span
                     style={{
                       lineHeight:"1.5",
@@ -868,9 +874,44 @@ function Search() {
                     $4443
                   </span><br/>
                   <Button style={{width:"124px",fontWeight:"900",backgroundImage:"linear-gradient(97deg,#53b2fe,#065af3 130%)",borderRadius:"35px",boxShadow:"0 1px 7px 0 rgb(0 0 0 / 22%)",color:"#fff",alignItems:"center",justifyContent:"center",height:"32px",padding:"0 20px",outline:"none",fontSize:"13px"}}>BOOK NOW</Button>
-                  </Col>
-
+                  </Col> 
             </Row>
+            <Row
+              style={{
+                backgroundColor: "#fff",
+                // marginTop: "10px",
+                marginLeft: "2rem",
+                fontFamily:"sans-serif",
+                lineHeight:"1.5"
+              }}
+              className="viewprices"
+            >
+               
+                  <Col style={{maxWidth:"150px"}}><span style={{fontSize:"14px",fontWeight:"900"}}>Flexi plus<br/></span> <span style={{fontWeight:"400",fontSize:"12px",lineHeight:"1.5"}}> Fare offered by airline.</span> </Col>
+                  <Col style={{maxWidth:"60px"}} ><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>7Kg</span></Col>
+                  <Col style={{maxWidth:"55px"}}><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>15Kg</span></Col>
+                  <Col style={{maxWidth:"85px"}}><span style={{fontSize:"12px",fontWeight:"400",margin:"0",padding:"0"}}>Cancellation fee starting $3500</span></Col>
+                  <Col style={{maxWidth:"95px"}}><span style={{fontSize:"12px" ,fontWeight:"400",marginLeft:""}}>Date Change fee starting $3250</span></Col>
+                  <Col style={{maxWidth:"120px"}}><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>Free Seats Available</span></Col>
+                  <Col style={{maxWidth:"95px"}}><span style={{fontSize:"12px",fontWeight:"400",marginLeft:""}}>Get Complimentary meals</span></Col>
+                  <Col style={{maxWidth:"95px"}}>
+                  <span
+                    style={{
+                      lineHeight:"1.5",
+                      fontWeight: "900",
+                      fontSize: "19px",
+                      fontFamily: "sans-serif",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    $4443
+                  </span><br/>
+                  <Button style={{width:"124px",fontWeight:"900",backgroundImage:"linear-gradient(97deg,#53b2fe,#065af3 130%)",borderRadius:"35px",boxShadow:"0 1px 7px 0 rgb(0 0 0 / 22%)",color:"#fff",alignItems:"center",justifyContent:"center",height:"32px",padding:"0 20px",outline:"none",fontSize:"13px"}}>BOOK NOW</Button>
+                  </Col> 
+            </Row>
+            
+            </>
+          )}
               
                 {/* <Row style={{background:"#f3f6f9",padding:"10px 0",display:"flex",fontFamily:"sans-serif",fontWeight:"800",lineHeight:"1.5",gap:"",}} >
                   <Col sm={2}><span style={{fontSize:"12px",marginLeft:""}}>FARES</span></Col>
